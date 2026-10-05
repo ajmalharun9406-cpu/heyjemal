@@ -60,9 +60,15 @@ nav.solid{background:#0a0a0bee;backdrop-filter:blur(10px);border-bottom:1px soli
 .cta-row{display:flex;flex-wrap:wrap;gap:12px}
 
 /* marquee */
-.marquee{border-block:1px solid var(--line);background:var(--accent);color:var(--accent-ink);overflow:hidden;white-space:nowrap;padding:16px 0}
-.marquee .track{display:inline-flex;gap:48px;animation:scroll 40s linear infinite;font-family:var(--display);font-size:clamp(22px,3vw,34px);text-transform:uppercase}
-.marquee .track span::after{content:"✦";margin-left:48px}
+.clients{padding:30px 0 28px;border-block:1px solid var(--line);background:var(--bg)}
+.clients .label{text-align:center;font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.marquee{overflow:hidden;white-space:nowrap;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+/* padding (not gap) per item keeps the -50% loop seamless; names alternate solid / outline */
+.marquee .track{display:inline-flex;animation:scroll 50s linear infinite;font-family:var(--display);font-size:clamp(28px,4vw,52px);line-height:1.1;text-transform:uppercase;letter-spacing:.02em}
+.marquee .track span{display:inline-flex;align-items:center;padding-right:40px;color:var(--text)}
+.marquee .track span:nth-child(even){color:transparent;-webkit-text-stroke:1.2px #ffffffa6}
+.marquee .track span::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent-text);margin-left:40px;flex:none}
+.marquee:hover .track{animation-play-state:paused}
 @keyframes scroll{to{transform:translateX(-50%)}}
 
 section{padding:clamp(72px,11vw,140px) 0}
@@ -181,7 +187,7 @@ footer{border-top:1px solid var(--line);padding:26px var(--pad);display:flex;jus
   </div>
 </header>
 
-<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+<div class="clients"><div class="label">Worked with</div><div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div></div>
 
 <section>
   <div class="wrap">
