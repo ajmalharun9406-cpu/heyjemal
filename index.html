@@ -43,8 +43,16 @@ nav.solid{background:#0a0a0bee;backdrop-filter:blur(10px);border-bottom:1px soli
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
 .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0a0a0b66 0%,#0a0a0b33 40%,#0a0a0bf2 100%)}
-.hero-inner{position:relative;z-index:2;padding-bottom:clamp(48px,9vh,110px);width:100%}
-.hero h1{font-size:clamp(64px,13vw,220px);line-height:.98;margin:14px 0 18px}
+/* padding-top keeps content clear of the fixed nav; h1 also scales with height so short screens don't overflow */
+.hero-inner{position:relative;z-index:2;padding-top:112px;padding-bottom:clamp(40px,7vh,96px);width:100%}
+.hero h1{font-size:clamp(52px,min(14vw,19vh),200px);font-size:clamp(52px,min(14vw,19svh),200px);line-height:.98;margin:14px 0 18px}
+@media(max-width:600px){
+  .hero-inner{padding-top:96px}
+  .hero p.lead{font-size:16px}
+  .roles{gap:6px;margin:18px 0 24px}
+  .roles span{font-size:13px;padding:5px 12px}
+  .cta-row .btn{padding:12px 20px;font-size:15px}
+}
 .hero p.lead{font-size:clamp(17px,1.8vw,22px);max-width:640px;color:#e4e4e7}
 .roles{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 30px}
 .roles span{border:1px solid #ffffff40;border-radius:999px;padding:6px 14px;font-size:14px;background:#0a0a0b55;backdrop-filter:blur(4px)}
