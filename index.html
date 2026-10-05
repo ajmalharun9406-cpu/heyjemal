@@ -11,7 +11,7 @@
 <style>
 :root{
   --bg:#0a0a0b; --bg2:#121214; --card:#18181b; --line:#2a2a2e;
-  --text:#f4f4f5; --muted:#a1a1aa; --accent:#c6ff3d; --accent-ink:#0a0a0b;
+  --text:#f4f4f5; --muted:#a1a1aa; --accent:#8b1d2c; --accent-ink:#ffffff; --accent-text:#d9576c;
   --display:'Anton',Impact,sans-serif; --body:'Inter',system-ui,sans-serif;
   --pad:clamp(16px,4vw,56px);
 }
@@ -22,21 +22,21 @@ img,video{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .wrap{padding:0 var(--pad);max-width:1400px;margin:0 auto}
 .display{font-family:var(--display);text-transform:uppercase;line-height:.92;letter-spacing:.01em}
-.accent{color:var(--accent)}
-.eyebrow{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.accent{color:var(--accent-text)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text)}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:16px;border:2px solid var(--accent);transition:transform .2s,background .2s,color .2s;cursor:pointer;font-family:inherit}
 .btn-solid{background:var(--accent);color:var(--accent-ink)}
 .btn-ghost{background:transparent;color:var(--text);border-color:#ffffff55}
 .btn:hover{transform:translateY(-2px)}
-.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-ghost:hover{border-color:var(--accent-text);color:var(--accent-text)}
 
 /* nav */
 nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px var(--pad);transition:background .3s}
 nav.solid{background:#0a0a0bee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .logo{font-family:var(--display);font-size:26px;letter-spacing:.02em}
-.logo span{color:var(--accent)}
+.logo span{color:var(--accent-text)}
 .navlinks{display:flex;gap:28px;font-size:15px;font-weight:500}
-.navlinks a{opacity:.8}.navlinks a:hover{opacity:1;color:var(--accent)}
+.navlinks a{opacity:.8}.navlinks a:hover{opacity:1;color:var(--accent-text)}
 @media(max-width:760px){.navlinks{display:none}}
 
 /* hero */
@@ -72,7 +72,7 @@ section{padding:clamp(72px,11vw,140px) 0}
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden}
 .stat{background:var(--bg);padding:28px}
-.stat b{display:block;font-family:var(--display);font-size:clamp(36px,4.5vw,60px);line-height:1;color:var(--accent);margin-bottom:8px}
+.stat b{display:block;font-family:var(--display);font-size:clamp(36px,4.5vw,60px);line-height:1;color:var(--accent-text);margin-bottom:8px}
 .stat span{color:var(--muted);font-size:15px}
 @media(max-width:760px){.stats{grid-template-columns:1fr 1fr}}
 
@@ -110,14 +110,14 @@ section{padding:clamp(72px,11vw,140px) 0}
 /* services */
 .services{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
 .svc{border:1px solid var(--line);border-radius:18px;padding:28px;background:var(--card);transition:border-color .2s,transform .2s}
-.svc:hover{border-color:var(--accent);transform:translateY(-4px)}
-.svc .num{font-family:var(--display);color:var(--accent);font-size:20px}
+.svc:hover{border-color:var(--accent-text);transform:translateY(-4px)}
+.svc .num{font-family:var(--display);color:var(--accent-text);font-size:20px}
 .svc h3{font-size:22px;margin:12px 0 8px}
 .svc p{color:var(--muted);font-size:15px}
 
 /* process */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
-.step{border-top:2px solid var(--accent);padding-top:18px}
+.step{border-top:2px solid var(--accent-text);padding-top:18px}
 .step h4{font-family:var(--display);font-size:32px;text-transform:uppercase;margin-bottom:6px}
 .step p{color:var(--muted);font-size:15px}
 @media(max-width:760px){.steps{grid-template-columns:1fr 1fr}}
@@ -136,7 +136,7 @@ section{padding:clamp(72px,11vw,140px) 0}
 .contact h2{font-size:clamp(56px,11vw,180px);margin:16px 0 28px}
 .contact .cta-row{justify-content:center}
 .socials{display:flex;justify-content:center;gap:22px;margin-top:34px;color:var(--muted);flex-wrap:wrap}
-.socials a:hover{color:var(--accent)}
+.socials a:hover{color:var(--accent-text)}
 footer{border-top:1px solid var(--line);padding:26px var(--pad);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:14px}
 
 /* modal */
