@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>heyjemal — Content Creator</title>
+<meta name="description" content="Jemal — content creator, video editor, motion designer & photographer. Ads, corporate, events, podcasts, short films & photography.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0b; --bg2:#121214; --card:#18181b; --line:#2a2a2e;
+  --text:#f4f4f5; --muted:#a1a1aa; --accent:#c6ff3d; --accent-ink:#0a0a0b;
+  --display:'Anton',Impact,sans-serif; --body:'Inter',system-ui,sans-serif;
+  --pad:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.6;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{padding:0 var(--pad);max-width:1400px;margin:0 auto}
+.display{font-family:var(--display);text-transform:uppercase;line-height:.92;letter-spacing:.01em}
+.accent{color:var(--accent)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:16px;border:2px solid var(--accent);transition:transform .2s,background .2s,color .2s;cursor:pointer;font-family:inherit}
+.btn-solid{background:var(--accent);color:var(--accent-ink)}
+.btn-ghost{background:transparent;color:var(--text);border-color:#ffffff55}
+.btn:hover{transform:translateY(-2px)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px var(--pad);transition:background .3s}
+nav.solid{background:#0a0a0bee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-size:26px;letter-spacing:.02em}
+.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:28px;font-size:15px;font-weight:500}
+.navlinks a{opacity:.8}.navlinks a:hover{opacity:1;color:var(--accent)}
+@media(max-width:760px){.navlinks{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0a0a0b66 0%,#0a0a0b33 40%,#0a0a0bf2 100%)}
+.hero-inner{position:relative;z-index:2;padding-bottom:clamp(48px,9vh,110px);width:100%}
+.hero h1{font-size:clamp(64px,13vw,220px);line-height:.98;margin:14px 0 18px}
+.hero p.lead{font-size:clamp(17px,1.8vw,22px);max-width:640px;color:#e4e4e7}
+.roles{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 30px}
+.roles span{border:1px solid #ffffff40;border-radius:999px;padding:6px 14px;font-size:14px;background:#0a0a0b55;backdrop-filter:blur(4px)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);background:var(--accent);color:var(--accent-ink);overflow:hidden;white-space:nowrap;padding:16px 0}
+.marquee .track{display:inline-flex;gap:48px;animation:scroll 40s linear infinite;font-family:var(--display);font-size:clamp(22px,3vw,34px);text-transform:uppercase}
+.marquee .track span::after{content:"✦";margin-left:48px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+section{padding:clamp(72px,11vw,140px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.sec-head h2{font-size:clamp(48px,8vw,120px)}
+.sec-head p{max-width:420px;color:var(--muted)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.stat{background:var(--bg);padding:28px}
+.stat b{display:block;font-family:var(--display);font-size:clamp(36px,4.5vw,60px);line-height:1;color:var(--accent);margin-bottom:8px}
+.stat span{color:var(--muted);font-size:15px}
+@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}}
+
+/* work */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filters button{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:999px;padding:9px 18px;font:500 14px var(--body);cursor:pointer;transition:.2s}
+.filters button.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+@media(max-width:400px){.grid{grid-template-columns:1fr}}
+.card{position:relative;border-radius:16px;overflow:hidden;background:var(--card);cursor:pointer;aspect-ratio:16/10;isolation:isolate}
+.card img,.card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s,opacity .3s}
+.card video{opacity:0}
+.card.playing video{opacity:1}
+.card:hover img{transform:scale(1.05)}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,#000d);z-index:1}
+.card .meta{position:absolute;left:18px;right:18px;bottom:16px;z-index:2}
+.card .tag{display:inline-block;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:8px}
+.card h3{font-size:18px;font-weight:600;line-height:1.3}
+.card .play{position:absolute;top:14px;right:14px;z-index:2;width:42px;height:42px;border-radius:50%;background:#0a0a0b99;border:1px solid #ffffff40;display:grid;place-items:center;transition:.2s}
+.card:hover .play{background:var(--accent);color:var(--accent-ink)}
+.card.hide{display:none}
+
+/* photos */
+#photos{background:var(--bg2)}
+.masonry{columns:3 280px;column-gap:14px}
+.masonry figure{break-inside:avoid;margin-bottom:14px;border-radius:14px;overflow:hidden;cursor:zoom-in;background:var(--card)}
+.masonry img{width:100%;height:auto;transition:transform .5s}
+.masonry figure:hover img{transform:scale(1.04)}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.svc{border:1px solid var(--line);border-radius:18px;padding:28px;background:var(--card);transition:border-color .2s,transform .2s}
+.svc:hover{border-color:var(--accent);transform:translateY(-4px)}
+.svc .num{font-family:var(--display);color:var(--accent);font-size:20px}
+.svc h3{font-size:22px;margin:12px 0 8px}
+.svc p{color:var(--muted);font-size:15px}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{border-top:2px solid var(--accent);padding-top:18px}
+.step h4{font-family:var(--display);font-size:32px;text-transform:uppercase;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+@media(max-width:760px){.steps{grid-template-columns:1fr 1fr}}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,5vw,80px);align-items:center}
+.about-img{border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:var(--card);position:relative}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-img .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:14px;padding:20px;border:2px dashed var(--line);border-radius:20px}
+.about h2{font-size:clamp(44px,6vw,88px);margin-bottom:22px}
+.about p{color:#d4d4d8;font-size:18px;margin-bottom:16px}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+
+/* contact */
+.contact{text-align:center;padding-bottom:60px}
+.contact h2{font-size:clamp(56px,11vw,180px);margin:16px 0 28px}
+.contact .cta-row{justify-content:center}
+.socials{display:flex;justify-content:center;gap:22px;margin-top:34px;color:var(--muted);flex-wrap:wrap}
+.socials a:hover{color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:26px var(--pad);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:14px}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;background:#000e;display:none;align-items:center;justify-content:center;padding:16px}
+.modal.open{display:flex}
+.modal-box{width:min(1100px,100%);position:relative}
+.modal video,.modal img{width:100%;max-height:82vh;object-fit:contain;border-radius:12px;background:#000}
+.modal .cap{margin-top:12px;display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:14px}
+.modal .cap b{color:var(--text);font-size:17px}
+.modal .x{position:absolute;top:-48px;right:0;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;line-height:1}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.marquee .track{animation:none}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#top" class="logo">hey<span>jemal</span></a>
+  <div class="navlinks">
+    <a href="#work">Work</a><a href="#photos">Photos</a><a href="#services">Services</a><a href="#about">About</a>
+  </div>
+  <a href="#contact" class="btn btn-solid" style="padding:10px 20px;font-size:14px">Let's Collab</a>
+</nav>
+
+<header class="hero" id="top">
+  <video autoplay muted loop playsinline poster="assets/hero-poster.jpg"><source src="assets/hero.mp4" type="video/mp4"></video>
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Content Creator · Malaysia</div>
+    <h1 class="display">Hey, I'm<br><span class="accent">Jemal.</span></h1>
+    <p class="lead">I help brands, companies and people tell their stories through video, motion and photography. Content that makes people stop scrolling.</p>
+    <div class="roles"><span>Video Editor</span><span>Motion Designer</span><span>Videographer</span><span>Photographer</span><span>Social Media Content</span></div>
+    <div class="cta-row">
+      <button class="btn btn-solid" id="openReel">▶ Watch Showreel</button>
+      <a href="#work" class="btn btn-ghost">See My Work</a>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat"><b>2017</b><span>Telling stories behind the camera</span></div>
+      <div class="stat"><b>7</b><span>Content formats, from ads to short films</span></div>
+      <div class="stat"><b>Video + Photo</b><span>One creator, from shoot to final edit</span></div>
+      <div class="stat"><b>A–Z</b><span>Idea, script, shoot, edit, motion</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="display">Selected<br><span class="accent">Work</span></h2>
+      <p>Tap any card to watch a preview. A selection of ads, corporate films, event highlights, motion graphics, podcasts and short films.</p>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="photos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="display">Behind the<br><span class="accent">Lens</span></h2>
+      <p>Weddings, graduations, portraits and street. Every frame is edited by hand to give it its own mood.</p>
+    </div>
+    <div class="masonry" id="masonry"></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="display">What I<br><span class="accent">Do</span></h2>
+      <p>Need one reel or a full campaign? I can handle it from start to finish.</p>
+    </div>
+    <div class="services">
+      <div class="svc reveal"><div class="num">01</div><h3>Reels, TikTok & Shorts</h3><p>Short-form videos with strong hooks, captions and pacing that keep people watching to the end.</p></div>
+      <div class="svc reveal"><div class="num">02</div><h3>Ads & Video Marketing</h3><p>Video ads for products and services, from script and shoot to cut-downs for every platform.</p></div>
+      <div class="svc reveal"><div class="num">03</div><h3>Motion Graphics</h3><p>Animation, explainers, app tutorials, intros and LED backdrops for events.</p></div>
+      <div class="svc reveal"><div class="num">04</div><h3>Corporate & Event Highlight</h3><p>Corporate films, gala dinners, seminars and launches, shot and edited with a cinematic touch.</p></div>
+      <div class="svc reveal"><div class="num">05</div><h3>Podcast & Talk Show</h3><p>Multi-cam setup, full-episode edits, and short clips cut for social media.</p></div>
+      <div class="svc reveal"><div class="num">06</div><h3>Photography</h3><p>Weddings, engagements, graduations, portraits and events, fully colour-graded.</p></div>
+      <div class="svc reveal"><div class="num">07</div><h3>Social Media Design</h3><p>Carousels, posters and ad creatives that stay consistent with your brand.</p></div>
+      <div class="svc reveal"><div class="num">08</div><h3>Short Films & Storytelling</h3><p>Stories that move people, from idea and script to screen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2 class="display">How We<br><span class="accent">Work</span></h2></div>
+    <div class="steps">
+      <div class="step reveal"><h4>01 Brief</h4><p>We talk through your goals, audience and budget.</p></div>
+      <div class="step reveal"><h4>02 Concept</h4><p>I pitch ideas, scripts and a moodboard.</p></div>
+      <div class="step reveal"><h4>03 Production</h4><p>Shoot, edit, motion and colour grade.</p></div>
+      <div class="step reveal"><h4>04 Deliver</h4><p>Review, revisions, and final files for every platform.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="background:var(--bg2)">
+  <div class="wrap about">
+    <div class="about-img reveal">
+      <img src="assets/jemal.jpg" alt="Jemal holding his Canon camera" loading="lazy" style="object-position:50% 35%">
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">About me</div>
+      <h2 class="display">I'm Ajmal.<br><span class="accent">Call me Jemal.</span></h2>
+      <p>I picked up a camera in 2017. Since then I've shot weddings, corporate events, ads and podcasts, and created motion graphics for brands of all sizes.</p>
+      <p>Today I focus on social media content that is sharp, fast and story-driven. Good content isn't just pretty. It makes people feel something, then act.</p>
+      <p style="color:var(--muted);font-size:15px">Past projects include work for TNB, Cenviro, Arissto, Dashing Diva, JomRides, Big Mo and more.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="eyebrow">Got a project?</div>
+    <h2 class="display reveal">Let's make<br><span class="accent">something.</span></h2>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="https://wa.me/60194655121?text=Hi%20Jemal%2C%20I%27d%20like%20to%20ask%20about%20a%20project" target="_blank" rel="noopener">WhatsApp Me</a>
+      <a class="btn btn-ghost" href="mailto:jemal9406@gmail.com">jemal9406@gmail.com</a>
+    </div>
+    <div class="socials">
+      <a href="https://instagram.com/heyjemal" target="_blank" rel="noopener">Instagram @heyjemal</a>
+      <a href="https://tiktok.com/@heyjemal" target="_blank" rel="noopener">TikTok @heyjemal</a>
+      <a href="https://youtube.com/@heyjemal" target="_blank" rel="noopener">YouTube @heyjemal</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 heyjemal</span>
+  <span>Made with cameras, coffee & a lot of renders.</span>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="x" id="closeModal" aria-label="Close">×</button>
+    <div id="modalMedia"></div>
+    <div class="cap"><b id="modalTitle"></b><span id="modalNote"></span></div>
+  </div>
+</div>
+
+<script>
+const WORKS = [
+  ["arissto-raya","Ads","Arissto Coffee — Aidilfitri"],
+  ["dashing-diva","Ads","Dashing Diva"],
+  ["bulan-sutena","Ads","Bulan Sutena — Ghosting (Lyric Video)"],
+  ["baju-raya","Ads","Baju Raya Collection"],
+  ["jomrides","Motion","Jom! JomRides"],
+  ["cenviro-marvel","Motion","Cenviro — Marvel Montage"],
+  ["faiza-trivia","Motion","Faiza Trivia Animation"],
+  ["jomrides-tutorial","Motion","JomRides — App Tutorial"],
+  ["tnbf-corporate","Corporate","TNBF Corporate Video"],
+  ["cenviro-corporate","Corporate","Cenviro Corporate Video"],
+  ["kambyan","Corporate","Kambyan — Interview & Drone"],
+  ["vup-story","Corporate","The VUP Story"],
+  ["ricm-2022","Event","RICM 2022 Highlight"],
+  ["genting-drone","Event","Genting — Drone x Text"],
+  ["jmfr-19","Event","JMFR '19 Highlight"],
+  ["ptp-highlight","Event","PTP Highlight"],
+  ["leona-chin","Podcast","Podcast — Leona Chin"],
+  ["leng-yein","Podcast","Podcast — Leng Yein"],
+  ["phd-covid","Short Film","Ph.D. Journey vs COVID-19"],
+  ["berkorban","Short Film","B.E.R.K.O.R.B.A.N. (Part 2)"]
+];
+const PHOTOS = ["p01","p02","p03","p04","p05","p06","p07","p08","p09","p10","p11","p12"];
+const CLIENTS = ["TNB","Cenviro","Arissto","Dashing Diva","JomRides","Big Mo","Kambyan","MyExpo","Johawaki","Koperasi Tentera","Bulan Sutena","Dr Roket TV"];
+
+// marquee
+const track = document.getElementById('track');
+track.innerHTML = [...CLIENTS, ...CLIENTS].map(c => `<span>${c}</span>`).join('');
+
+// work grid
+const grid = document.getElementById('grid');
+grid.innerHTML = WORKS.map(([s,c,t]) => `
+  <article class="card reveal" data-cat="${c}" data-slug="${s}" data-title="${t}">
+    <img src="assets/thumb/${s}.jpg" alt="${t}" loading="lazy">
+    <video muted loop playsinline preload="none" src="assets/clip/${s}.mp4"></video>
+    <div class="play">▶</div>
+    <div class="meta"><span class="tag">${c}</span><h3>${t}</h3></div>
+  </article>`).join('');
+
+const cats = ["All", ...new Set(WORKS.map(w => w[1]))];
+const filters = document.getElementById('filters');
+filters.innerHTML = cats.map((c,i) => `<button class="${i?'':'on'}" data-c="${c}">${c}</button>`).join('');
+filters.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  filters.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+  grid.querySelectorAll('.card').forEach(card =>
+    card.classList.toggle('hide', b.dataset.c !== 'All' && card.dataset.cat !== b.dataset.c));
+});
+
+const play = card => card.querySelector('video').play().then(() => card.classList.add('playing')).catch(()=>{});
+const stop = card => { card.querySelector('video').pause(); card.classList.remove('playing'); };
+// touch screens have no hover: play preview when the card is mid-screen
+const touch = matchMedia('(hover: none)').matches;
+const vio = touch && new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? play(e.target) : stop(e.target)), {threshold:.75});
+grid.querySelectorAll('.card').forEach(card => {
+  if (touch) vio.observe(card);
+  card.addEventListener('mouseenter', () => play(card));
+  card.addEventListener('mouseleave', () => stop(card));
+  card.addEventListener('click', () => openModal(
+    `<video src="assets/clip/${card.dataset.slug}.mp4" autoplay loop muted playsinline controls></video>`,
+    card.dataset.title, 'Preview · full video coming soon on YouTube'));
+});
+
+// photos
+const masonry = document.getElementById('masonry');
+masonry.innerHTML = PHOTOS.map(p => `<figure class="reveal"><img src="assets/photo/${p}.jpg" alt="Photography by Jemal" loading="lazy"></figure>`).join('');
+masonry.addEventListener('click', e => {
+  const img = e.target.closest('img'); if (!img) return;
+  openModal(`<img src="${img.src}" alt="">`, 'Photography', '@heyjemal');
+});
+
+// modal
+const modal = document.getElementById('modal');
+function openModal(html, title, note){
+  document.getElementById('modalMedia').innerHTML = html;
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalNote').textContent = note;
+  modal.classList.add('open'); document.body.style.overflow = 'hidden';
+}
+function closeModal(){
+  modal.classList.remove('open'); document.getElementById('modalMedia').innerHTML = '';
+  document.body.style.overflow = '';
+}
+document.getElementById('closeModal').onclick = closeModal;
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.getElementById('openReel').onclick = () =>
+  openModal('<video src="assets/showreel.mp4" autoplay controls playsinline></video>', 'Showreel — Jemal', '3:28');
+
+// nav + reveal
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > 60), {passive:true});
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+// deep links to a section (e.g. heyjemal.com/#services)
+addEventListener('load', () => { const t = location.hash && document.querySelector(location.hash); if (t) t.scrollIntoView({behavior:'instant'}); });
+</script>
+</body>
+</html>

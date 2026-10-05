@@ -1,0 +1,5 @@
+# working files (client photo contact sheets, local paths) - never publish
+_src/
+*.tmp
+Thumbs.db
+desktop.ini
