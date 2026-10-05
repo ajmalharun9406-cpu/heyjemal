@@ -1,62 +1,176 @@
 [
  {
-  "src": "p01.jpg",
+  "src": "wedding-01.jpg",
+  "cat": "Wedding",
   "w": 933,
   "h": 1400
  },
  {
-  "src": "p02.jpg",
+  "src": "wedding-02.jpg",
+  "cat": "Wedding",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "wedding-03.jpg",
+  "cat": "Wedding",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "wedding-04.jpg",
+  "cat": "Wedding",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "wedding-05.jpg",
+  "cat": "Wedding",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "wedding-06.jpg",
+  "cat": "Wedding",
   "w": 933,
   "h": 1400
  },
  {
-  "src": "p03.jpg",
-  "w": 1400,
-  "h": 933
- },
- {
-  "src": "p04.jpg",
+  "src": "engagement-01.jpg",
+  "cat": "Engagement",
   "w": 933,
   "h": 1400
  },
  {
-  "src": "p05.jpg",
+  "src": "engagement-02.jpg",
+  "cat": "Engagement",
   "w": 933,
   "h": 1400
  },
  {
-  "src": "p06.jpg",
+  "src": "engagement-03.jpg",
+  "cat": "Engagement",
   "w": 1400,
   "h": 933
  },
  {
-  "src": "p07.jpg",
+  "src": "engagement-04.jpg",
+  "cat": "Engagement",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "engagement-05.jpg",
+  "cat": "Engagement",
   "w": 933,
   "h": 1400
  },
  {
-  "src": "p08.jpg",
+  "src": "graduation-01.jpg",
+  "cat": "Graduation",
   "w": 1400,
   "h": 933
  },
  {
-  "src": "p09.jpg",
+  "src": "graduation-02.jpg",
+  "cat": "Graduation",
   "w": 1400,
   "h": 933
  },
  {
-  "src": "p10.jpg",
+  "src": "graduation-03.jpg",
+  "cat": "Graduation",
   "w": 1400,
   "h": 933
  },
  {
-  "src": "p11.jpg",
+  "src": "graduation-04.jpg",
+  "cat": "Graduation",
   "w": 1400,
   "h": 933
  },
  {
-  "src": "p12.jpg",
+  "src": "graduation-05.jpg",
+  "cat": "Graduation",
   "w": 1400,
   "h": 933
+ },
+ {
+  "src": "graduation-06.jpg",
+  "cat": "Graduation",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "portrait-01.jpg",
+  "cat": "Portrait",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "portrait-02.jpg",
+  "cat": "Portrait",
+  "w": 933,
+  "h": 1400
+ },
+ {
+  "src": "portrait-03.jpg",
+  "cat": "Portrait",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "portrait-04.jpg",
+  "cat": "Portrait",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "portrait-05.jpg",
+  "cat": "Portrait",
+  "w": 933,
+  "h": 1400
+ },
+ {
+  "src": "portrait-06.jpg",
+  "cat": "Portrait",
+  "w": 934,
+  "h": 1400
+ },
+ {
+  "src": "events-01.jpg",
+  "cat": "Events & Lifestyle",
+  "w": 1050,
+  "h": 1400
+ },
+ {
+  "src": "events-02.jpg",
+  "cat": "Events & Lifestyle",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "events-03.jpg",
+  "cat": "Events & Lifestyle",
+  "w": 933,
+  "h": 1400
+ },
+ {
+  "src": "events-04.jpg",
+  "cat": "Events & Lifestyle",
+  "w": 1400,
+  "h": 933
+ },
+ {
+  "src": "events-05.jpg",
+  "cat": "Events & Lifestyle",
+  "w": 933,
+  "h": 1400
+ },
+ {
+  "src": "events-06.jpg",
+  "cat": "Events & Lifestyle",
+  "w": 1400,
+  "h": 1258
  }
 ]
