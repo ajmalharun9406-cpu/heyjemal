@@ -200,7 +200,7 @@ footer{border-top:1px solid var(--line);padding:26px var(--pad);display:flex;jus
   <div class="wrap">
     <div class="sec-head reveal">
       <h2 class="display">Behind the<br><span class="accent">Lens</span></h2>
-      <p>Weddings, engagements, graduations, portraits and events. Every frame is edited by hand to give it its own mood.</p>
+      <p>Portraits, events, weddings, engagements and graduations. Every frame is edited by hand to give it its own mood.</p>
     </div>
     <div class="filters" id="photoFilters"></div>
     <div class="masonry" id="masonry"></div>
@@ -307,7 +307,7 @@ const WORKS = [
   ["phd-covid","Short Film","Ph.D. Journey vs COVID-19"],
   ["berkorban","Short Film","B.E.R.K.O.R.B.A.N. (Part 2)"]
 ];
-const PHOTO_SETS = [["wedding","Wedding",6],["engagement","Engagement",5],["graduation","Graduation",6],["portrait","Portrait",6],["events","Events & Lifestyle",6]];
+const PHOTO_SETS = [["portrait","Portrait",6],["events","Events & Lifestyle",6],["wedding","Wedding",6],["engagement","Engagement",5],["graduation","Graduation",6]];
 const PHOTOS = PHOTO_SETS.flatMap(([k,cat,n]) => Array.from({length:n}, (_,i) => [`${k}-${String(i+1).padStart(2,'0')}`, cat]));
 const CLIENTS = ["TNB","Cenviro","Arissto","Dashing Diva","JomRides","Big Mo","Kambyan","MyExpo","Johawaki","Koperasi Tentera","Bulan Sutena","Dr Roket TV"];
 
