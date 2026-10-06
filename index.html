@@ -113,6 +113,21 @@ section{padding:clamp(72px,11vw,140px) 0}
 .masonry figcaption{position:absolute;left:12px;bottom:12px;background:#0a0a0bcc;backdrop-filter:blur(4px);color:var(--text);font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 10px;border-radius:999px;opacity:0;transform:translateY(6px);transition:.25s}
 .masonry figure:hover figcaption{opacity:1;transform:none}
 @media(hover:none){.masonry figcaption{opacity:1;transform:none}}
+/* album = one person/session as a swipeable carousel card */
+.album .slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:2/3;background:#000}
+.album .slides::-webkit-scrollbar{display:none}
+.album .slides img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start;transform:none!important}
+.album .slides img.land{object-fit:contain}
+.album figcaption{opacity:1;transform:none;top:12px;bottom:auto;font-size:13px}
+.album .count{position:absolute;top:12px;right:12px;background:#0a0a0bcc;color:var(--text);font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px}
+.album .dots{position:absolute;left:0;right:0;bottom:12px;display:flex;justify-content:center;gap:6px;pointer-events:none}
+.album .dots i{width:6px;height:6px;border-radius:50%;background:#ffffff66;transition:.2s}
+.album .dots i.on{background:#fff;width:18px;border-radius:3px}
+.album .sl{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:1px solid #ffffff40;background:#0a0a0bb3;color:#fff;font-size:22px;line-height:1;cursor:pointer;opacity:0;transition:.2s}
+.album:hover .sl{opacity:1}
+.album .sl:hover{background:var(--accent)}
+.album .prev{left:10px}.album .next{right:10px}
+@media(hover:none){.album .sl{opacity:1;width:34px;height:34px;font-size:18px}}
 
 /* services */
 .services{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
@@ -322,8 +337,16 @@ const WORKS = [
   ["phd-covid","Short Film","Ph.D. Journey vs COVID-19"],
   ["berkorban","Short Film","B.E.R.K.O.R.B.A.N. (Part 2)"]
 ];
-const PHOTO_SETS = [["portrait","Portrait",17],["events","Events & Lifestyle",6],["wedding","Wedding",6],["engagement","Engagement",5],["graduation","Graduation",6]];
-const PHOTOS = PHOTO_SETS.flatMap(([k,cat,n]) => Array.from({length:n}, (_,i) => [`${k}-${String(i+1).padStart(2,'0')}`, cat]));
+// [file prefix, label, count, albums?] — an album is [title, n] and takes the next n files in order;
+// one album per person/session shows as a swipeable carousel card, leftover files show as single photos
+const PHOTO_SETS = [
+  ["portrait","Portrait",17,[["Garden Portrait",8],["Urban Portrait",9]]],
+  ["events","Events & Lifestyle",6],["wedding","Wedding",6],["engagement","Engagement",5],["graduation","Graduation",6]];
+const PHOTO_ITEMS = PHOTO_SETS.map(([k,cat,n,albums=[]]) => {
+  const files = Array.from({length:n}, (_,i) => `${k}-${String(i+1).padStart(2,'0')}`);
+  const items = albums.map(([title,m]) => ({cat, title, photos: files.splice(0, m)}));
+  return items.concat(files.map(f => ({cat, title: cat, photos: [f]})));
+});
 const CLIENTS = ["TNB","Cenviro","Arissto","Dashing Diva","JomRides","Big Mo","Kambyan","MyExpo","Johawaki","Koperasi Tentera","Bulan Sutena","Dr Roket TV"];
 
 // marquee
@@ -366,14 +389,42 @@ grid.querySelectorAll('.card').forEach(card => {
 
 // photos
 const masonry = document.getElementById('masonry');
-// interleave categories so "All" shows a mix instead of blocks
-const byCat = PHOTO_SETS.map(([,cat]) => PHOTOS.filter(p => p[1] === cat));
-// spread each category evenly by relative position, so a large set doesn't bunch up at the end
-const mixed = byCat.flatMap((l, c) => l.map((p, i) => [p, (i + .5) / l.length, c]))
+// spread each category evenly by relative position so "All" shows a mix, not blocks
+const mixed = PHOTO_ITEMS.flatMap((l, c) => l.map((it, i) => [it, (i + .5) / l.length, c]))
   .sort((a, b) => a[1] - b[1] || a[2] - b[2]).map(x => x[0]);
 // bump PHOTO_VER whenever photo files are replaced under the same name, so browsers don't show cached old images
 const PHOTO_VER = 2;
-masonry.innerHTML = mixed.map(([p,c]) => `<figure class="reveal" data-cat="${c}"><img src="assets/photo/${p}.jpg?v=${PHOTO_VER}" alt="${c} photography by Jemal" loading="lazy"><figcaption>${c}</figcaption></figure>`).join('');
+const photoSrc = p => `assets/photo/${p}.jpg?v=${PHOTO_VER}`;
+masonry.innerHTML = mixed.map((it, i) => it.photos.length === 1
+  ? `<figure class="reveal" data-cat="${it.cat}" data-i="${i}"><img src="${photoSrc(it.photos[0])}" alt="${it.cat} photography by Jemal" loading="lazy"><figcaption>${it.cat}</figcaption></figure>`
+  : `<figure class="reveal album" data-cat="${it.cat}" data-i="${i}">
+      <div class="slides">${it.photos.map((p, j) => `<img src="${photoSrc(p)}" alt="${it.title} ${j + 1}" loading="lazy">`).join('')}</div>
+      <button class="sl prev" aria-label="Previous">‹</button><button class="sl next" aria-label="Next">›</button>
+      <span class="count">1 / ${it.photos.length}</span>
+      <div class="dots">${it.photos.map((_, j) => `<i class="${j ? '' : 'on'}"></i>`).join('')}</div>
+      <figcaption>${it.title}</figcaption>
+    </figure>`).join('');
+
+// album carousels: arrows wrap around, dots + counter follow the scroll position (works with swipe too)
+masonry.querySelectorAll('.album').forEach(f => {
+  const s = f.querySelector('.slides'), n = s.children.length;
+  let cur = 0;
+  const mark = k => {
+    cur = k;
+    f.querySelector('.count').textContent = `${k + 1} / ${n}`;
+    f.querySelectorAll('.dots i').forEach((d, j) => d.classList.toggle('on', j === k));
+  };
+  // arrows track their own target (mid-animation scrollLeft is unreliable) and mark it immediately
+  const go = d => { const t = (cur + d + n) % n; mark(t); s.scrollTo({left: t * s.clientWidth, behavior: 'smooth'}); };
+  f.querySelector('.prev').onclick = e => { e.stopPropagation(); go(-1); };
+  f.querySelector('.next').onclick = e => { e.stopPropagation(); go(1); };
+  // swipe: settle on whichever slide the scroll lands on
+  let t; s.addEventListener('scroll', () => { clearTimeout(t); t = setTimeout(() => mark(Math.round(s.scrollLeft / s.clientWidth)), 120); }, {passive: true});
+  f.cur = () => cur;
+  // landscape shots inside a portrait-shaped card: show whole frame instead of cropping
+  s.querySelectorAll('img').forEach(im => im.addEventListener('load', () =>
+    im.classList.toggle('land', im.naturalWidth > im.naturalHeight), {once: true}));
+});
 
 const photoFilters = document.getElementById('photoFilters');
 photoFilters.innerHTML = ["All", ...PHOTO_SETS.map(s => s[1])].map((c,i) => `<button class="${i?'':'on'}" data-c="${c}">${c}</button>`).join('');
@@ -384,18 +435,25 @@ photoFilters.addEventListener('click', e => {
     f.classList.toggle('hide', b.dataset.c !== 'All' && f.dataset.cat !== b.dataset.c));
 });
 
-// lightbox: steps through the photos currently visible under the active filter
+// lightbox: an album steps through its own photos; a single photo steps through the visible singles
 let shown = [], at = 0;
 function showPhoto(i){
   at = (i + shown.length) % shown.length;
-  const f = shown[at];
-  openModal(`<img src="${f.querySelector('img').src}" alt="">`, f.dataset.cat, `${at + 1} / ${shown.length}`);
+  const [src, title] = shown[at];
+  openModal(`<img src="${src}" alt="">`, title, `${at + 1} / ${shown.length}`);
   modal.classList.add('gallery');
 }
 masonry.addEventListener('click', e => {
-  const f = e.target.closest('figure'); if (!f) return;
-  shown = [...masonry.querySelectorAll('figure:not(.hide)')];
-  showPhoto(shown.indexOf(f));
+  const f = e.target.closest('figure'); if (!f || e.target.closest('.sl')) return;
+  const it = mixed[f.dataset.i];
+  if (f.classList.contains('album')) {
+    shown = it.photos.map(p => [photoSrc(p), it.title]);
+    showPhoto(f.cur());
+  } else {
+    const singles = [...masonry.querySelectorAll('figure:not(.hide):not(.album)')];
+    shown = singles.map(x => [photoSrc(mixed[x.dataset.i].photos[0]), x.dataset.cat]);
+    showPhoto(singles.indexOf(f));
+  }
 });
 document.getElementById('prevPhoto').onclick = e => { e.stopPropagation(); showPhoto(at - 1); };
 document.getElementById('nextPhoto').onclick = e => { e.stopPropagation(); showPhoto(at + 1); };
