@@ -322,7 +322,7 @@ const WORKS = [
   ["phd-covid","Short Film","Ph.D. Journey vs COVID-19"],
   ["berkorban","Short Film","B.E.R.K.O.R.B.A.N. (Part 2)"]
 ];
-const PHOTO_SETS = [["portrait","Portrait",6],["events","Events & Lifestyle",6],["wedding","Wedding",6],["engagement","Engagement",5],["graduation","Graduation",6]];
+const PHOTO_SETS = [["portrait","Portrait",23],["events","Events & Lifestyle",6],["wedding","Wedding",6],["engagement","Engagement",5],["graduation","Graduation",6]];
 const PHOTOS = PHOTO_SETS.flatMap(([k,cat,n]) => Array.from({length:n}, (_,i) => [`${k}-${String(i+1).padStart(2,'0')}`, cat]));
 const CLIENTS = ["TNB","Cenviro","Arissto","Dashing Diva","JomRides","Big Mo","Kambyan","MyExpo","Johawaki","Koperasi Tentera","Bulan Sutena","Dr Roket TV"];
 
@@ -368,7 +368,9 @@ grid.querySelectorAll('.card').forEach(card => {
 const masonry = document.getElementById('masonry');
 // interleave categories so "All" shows a mix instead of blocks
 const byCat = PHOTO_SETS.map(([,cat]) => PHOTOS.filter(p => p[1] === cat));
-const mixed = []; for (let i = 0; byCat.some(l => l[i]); i++) byCat.forEach(l => l[i] && mixed.push(l[i]));
+// spread each category evenly by relative position, so a large set doesn't bunch up at the end
+const mixed = byCat.flatMap((l, c) => l.map((p, i) => [p, (i + .5) / l.length, c]))
+  .sort((a, b) => a[1] - b[1] || a[2] - b[2]).map(x => x[0]);
 masonry.innerHTML = mixed.map(([p,c]) => `<figure class="reveal" data-cat="${c}"><img src="assets/photo/${p}.jpg" alt="${c} photography by Jemal" loading="lazy"><figcaption>${c}</figcaption></figure>`).join('');
 
 const photoFilters = document.getElementById('photoFilters');
