@@ -1,0 +1,302 @@
+{
+ "photoCats": [
+  "Portrait",
+  "Events & Lifestyle",
+  "Wedding",
+  "Engagement",
+  "Graduation"
+ ],
+ "videos": [
+  {
+   "cat": "Ads",
+   "title": "Arissto Coffee — Aidilfitri",
+   "thumb": "assets/thumb/arissto-raya.jpg",
+   "clip": "assets/clip/arissto-raya.mp4"
+  },
+  {
+   "cat": "Ads",
+   "title": "Dashing Diva",
+   "thumb": "assets/thumb/dashing-diva.jpg",
+   "clip": "assets/clip/dashing-diva.mp4"
+  },
+  {
+   "cat": "Ads",
+   "title": "Bulan Sutena — Ghosting (Lyric Video)",
+   "thumb": "assets/thumb/bulan-sutena.jpg",
+   "clip": "assets/clip/bulan-sutena.mp4"
+  },
+  {
+   "cat": "Ads",
+   "title": "Baju Raya Collection",
+   "thumb": "assets/thumb/baju-raya.jpg",
+   "clip": "assets/clip/baju-raya.mp4"
+  },
+  {
+   "cat": "Motion",
+   "title": "Jom! JomRides",
+   "thumb": "assets/thumb/jomrides.jpg",
+   "clip": "assets/clip/jomrides.mp4"
+  },
+  {
+   "cat": "Motion",
+   "title": "Cenviro — Marvel Montage",
+   "thumb": "assets/thumb/cenviro-marvel.jpg",
+   "clip": "assets/clip/cenviro-marvel.mp4"
+  },
+  {
+   "cat": "Motion",
+   "title": "Faiza Trivia Animation",
+   "thumb": "assets/thumb/faiza-trivia.jpg",
+   "clip": "assets/clip/faiza-trivia.mp4"
+  },
+  {
+   "cat": "Motion",
+   "title": "JomRides — App Tutorial",
+   "thumb": "assets/thumb/jomrides-tutorial.jpg",
+   "clip": "assets/clip/jomrides-tutorial.mp4"
+  },
+  {
+   "cat": "Corporate",
+   "title": "TNBF Corporate Video",
+   "thumb": "assets/thumb/tnbf-corporate.jpg",
+   "clip": "assets/clip/tnbf-corporate.mp4"
+  },
+  {
+   "cat": "Corporate",
+   "title": "Cenviro Corporate Video",
+   "thumb": "assets/thumb/cenviro-corporate.jpg",
+   "clip": "assets/clip/cenviro-corporate.mp4"
+  },
+  {
+   "cat": "Corporate",
+   "title": "Kambyan — Interview & Drone",
+   "thumb": "assets/thumb/kambyan.jpg",
+   "clip": "assets/clip/kambyan.mp4"
+  },
+  {
+   "cat": "Corporate",
+   "title": "The VUP Story",
+   "thumb": "assets/thumb/vup-story.jpg",
+   "clip": "assets/clip/vup-story.mp4"
+  },
+  {
+   "cat": "Event",
+   "title": "RICM 2022 Highlight",
+   "thumb": "assets/thumb/ricm-2022.jpg",
+   "clip": "assets/clip/ricm-2022.mp4"
+  },
+  {
+   "cat": "Event",
+   "title": "Genting — Drone x Text",
+   "thumb": "assets/thumb/genting-drone.jpg",
+   "clip": "assets/clip/genting-drone.mp4"
+  },
+  {
+   "cat": "Event",
+   "title": "JMFR '19 Highlight",
+   "thumb": "assets/thumb/jmfr-19.jpg",
+   "clip": "assets/clip/jmfr-19.mp4"
+  },
+  {
+   "cat": "Event",
+   "title": "PTP Highlight",
+   "thumb": "assets/thumb/ptp-highlight.jpg",
+   "clip": "assets/clip/ptp-highlight.mp4"
+  },
+  {
+   "cat": "Podcast",
+   "title": "Podcast — Leona Chin",
+   "thumb": "assets/thumb/leona-chin.jpg",
+   "clip": "assets/clip/leona-chin.mp4"
+  },
+  {
+   "cat": "Podcast",
+   "title": "Podcast — Leng Yein",
+   "thumb": "assets/thumb/leng-yein.jpg",
+   "clip": "assets/clip/leng-yein.mp4"
+  },
+  {
+   "cat": "Short Film",
+   "title": "Ph.D. Journey vs COVID-19",
+   "thumb": "assets/thumb/phd-covid.jpg",
+   "clip": "assets/clip/phd-covid.mp4"
+  },
+  {
+   "cat": "Short Film",
+   "title": "B.E.R.K.O.R.B.A.N. (Part 2)",
+   "thumb": "assets/thumb/berkorban.jpg",
+   "clip": "assets/clip/berkorban.mp4"
+  }
+ ],
+ "photos": [
+  {
+   "cat": "Portrait",
+   "title": "Garden Portrait",
+   "album": true,
+   "photos": [
+    "assets/photo/portrait-garden-01.jpg",
+    "assets/photo/portrait-garden-02.jpg",
+    "assets/photo/portrait-garden-03.jpg",
+    "assets/photo/portrait-garden-04.jpg",
+    "assets/photo/portrait-garden-05.jpg",
+    "assets/photo/portrait-garden-06.jpg",
+    "assets/photo/portrait-garden-07.jpg",
+    "assets/photo/portrait-garden-08.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "title": "Urban Portrait",
+   "album": true,
+   "photos": [
+    "assets/photo/portrait-urban-01.jpg",
+    "assets/photo/portrait-urban-02.jpg",
+    "assets/photo/portrait-urban-03.jpg",
+    "assets/photo/portrait-urban-04.jpg",
+    "assets/photo/portrait-urban-05.jpg",
+    "assets/photo/portrait-urban-06.jpg",
+    "assets/photo/portrait-urban-07.jpg",
+    "assets/photo/portrait-urban-08.jpg",
+    "assets/photo/portrait-urban-09.jpg"
+   ]
+  },
+  {
+   "cat": "Events & Lifestyle",
+   "photos": [
+    "assets/photo/events-01.jpg"
+   ]
+  },
+  {
+   "cat": "Events & Lifestyle",
+   "photos": [
+    "assets/photo/events-02.jpg"
+   ]
+  },
+  {
+   "cat": "Events & Lifestyle",
+   "photos": [
+    "assets/photo/events-03.jpg"
+   ]
+  },
+  {
+   "cat": "Events & Lifestyle",
+   "photos": [
+    "assets/photo/events-04.jpg"
+   ]
+  },
+  {
+   "cat": "Events & Lifestyle",
+   "photos": [
+    "assets/photo/events-05.jpg"
+   ]
+  },
+  {
+   "cat": "Events & Lifestyle",
+   "photos": [
+    "assets/photo/events-06.jpg"
+   ]
+  },
+  {
+   "cat": "Wedding",
+   "photos": [
+    "assets/photo/wedding-01.jpg"
+   ]
+  },
+  {
+   "cat": "Wedding",
+   "photos": [
+    "assets/photo/wedding-02.jpg"
+   ]
+  },
+  {
+   "cat": "Wedding",
+   "photos": [
+    "assets/photo/wedding-03.jpg"
+   ]
+  },
+  {
+   "cat": "Wedding",
+   "photos": [
+    "assets/photo/wedding-04.jpg"
+   ]
+  },
+  {
+   "cat": "Wedding",
+   "photos": [
+    "assets/photo/wedding-05.jpg"
+   ]
+  },
+  {
+   "cat": "Wedding",
+   "photos": [
+    "assets/photo/wedding-06.jpg"
+   ]
+  },
+  {
+   "cat": "Engagement",
+   "photos": [
+    "assets/photo/engagement-01.jpg"
+   ]
+  },
+  {
+   "cat": "Engagement",
+   "photos": [
+    "assets/photo/engagement-02.jpg"
+   ]
+  },
+  {
+   "cat": "Engagement",
+   "photos": [
+    "assets/photo/engagement-03.jpg"
+   ]
+  },
+  {
+   "cat": "Engagement",
+   "photos": [
+    "assets/photo/engagement-04.jpg"
+   ]
+  },
+  {
+   "cat": "Engagement",
+   "photos": [
+    "assets/photo/engagement-05.jpg"
+   ]
+  },
+  {
+   "cat": "Graduation",
+   "photos": [
+    "assets/photo/graduation-01.jpg"
+   ]
+  },
+  {
+   "cat": "Graduation",
+   "photos": [
+    "assets/photo/graduation-02.jpg"
+   ]
+  },
+  {
+   "cat": "Graduation",
+   "photos": [
+    "assets/photo/graduation-03.jpg"
+   ]
+  },
+  {
+   "cat": "Graduation",
+   "photos": [
+    "assets/photo/graduation-04.jpg"
+   ]
+  },
+  {
+   "cat": "Graduation",
+   "photos": [
+    "assets/photo/graduation-05.jpg"
+   ]
+  },
+  {
+   "cat": "Graduation",
+   "photos": [
+    "assets/photo/graduation-06.jpg"
+   ]
+  }
+ ]
+}
