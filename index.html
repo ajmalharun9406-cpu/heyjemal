@@ -371,7 +371,9 @@ const byCat = PHOTO_SETS.map(([,cat]) => PHOTOS.filter(p => p[1] === cat));
 // spread each category evenly by relative position, so a large set doesn't bunch up at the end
 const mixed = byCat.flatMap((l, c) => l.map((p, i) => [p, (i + .5) / l.length, c]))
   .sort((a, b) => a[1] - b[1] || a[2] - b[2]).map(x => x[0]);
-masonry.innerHTML = mixed.map(([p,c]) => `<figure class="reveal" data-cat="${c}"><img src="assets/photo/${p}.jpg" alt="${c} photography by Jemal" loading="lazy"><figcaption>${c}</figcaption></figure>`).join('');
+// bump PHOTO_VER whenever photo files are replaced under the same name, so browsers don't show cached old images
+const PHOTO_VER = 2;
+masonry.innerHTML = mixed.map(([p,c]) => `<figure class="reveal" data-cat="${c}"><img src="assets/photo/${p}.jpg?v=${PHOTO_VER}" alt="${c} photography by Jemal" loading="lazy"><figcaption>${c}</figcaption></figure>`).join('');
 
 const photoFilters = document.getElementById('photoFilters');
 photoFilters.innerHTML = ["All", ...PHOTO_SETS.map(s => s[1])].map((c,i) => `<button class="${i?'':'on'}" data-c="${c}">${c}</button>`).join('');
