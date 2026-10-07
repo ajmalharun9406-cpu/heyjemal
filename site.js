@@ -41,7 +41,8 @@ const vio = touch && new IntersectionObserver(es => es.forEach(e => e.isIntersec
 function renderWork() {
   const V = HJ.media.videos;
   grid.innerHTML = V.map((v, i) => `
-    <article class="card reveal" data-cat="${esc(v.cat)}" data-i="${i}">
+    <article class="card reveal${v.vertical ? ' vert' : ''}" data-cat="${esc(v.cat)}" data-i="${i}">
+      ${v.vertical ? `<img class="bg" src="${HJ.src(v.thumb)}" alt="" aria-hidden="true" loading="lazy">` : ''}
       <img src="${HJ.src(v.thumb)}" alt="${esc(v.title)}" loading="lazy">
       <video muted loop playsinline preload="none" src="${HJ.src(v.clip)}"></video>
       <div class="play">▶</div>
@@ -60,7 +61,11 @@ function renderWork() {
 grid.addEventListener('click', e => {
   const card = e.target.closest('.card'); if (!card || e.target.closest('.adm')) return;
   const v = HJ.media.videos[card.dataset.i];
-  openModal(`<video src="${HJ.src(v.clip)}" autoplay loop muted playsinline controls></video>`, v.title, 'Preview · full video coming soon on YouTube');
+  // full-length pieces (e.g. spec ads) play with sound; the rest are short muted previews
+  openModal(v.full
+    ? `<video src="${HJ.src(v.clip)}" autoplay playsinline controls></video>`
+    : `<video src="${HJ.src(v.clip)}" autoplay loop muted playsinline controls></video>`,
+    v.title, v.full ? (v.vertical ? 'Full video · 9:16' : 'Full video') : 'Preview · full video coming soon on YouTube');
 });
 
 /* ---------- photos ---------- */

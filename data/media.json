@@ -8,25 +8,41 @@
  ],
  "videos": [
   {
-   "cat": "Ads",
+   "cat": "Ads & Marketing",
+   "title": "Adidas Hyperboost EPHR — Spec Ad",
+   "thumb": "assets/thumb/hyperboost-ephr.jpg",
+   "clip": "assets/clip/hyperboost-ephr.mp4",
+   "vertical": true,
+   "full": true
+  },
+  {
+   "cat": "Ads & Marketing",
+   "title": "Toyota Urban Cruiser — Spec Ad",
+   "thumb": "assets/thumb/toyota-urban-cruiser.jpg",
+   "clip": "assets/clip/toyota-urban-cruiser.mp4",
+   "vertical": true,
+   "full": true
+  },
+  {
+   "cat": "Ads & Marketing",
    "title": "Arissto Coffee — Aidilfitri",
    "thumb": "assets/thumb/arissto-raya.jpg",
    "clip": "assets/clip/arissto-raya.mp4"
   },
   {
-   "cat": "Ads",
+   "cat": "Ads & Marketing",
    "title": "Dashing Diva",
    "thumb": "assets/thumb/dashing-diva.jpg",
    "clip": "assets/clip/dashing-diva.mp4"
   },
   {
-   "cat": "Ads",
+   "cat": "Ads & Marketing",
    "title": "Bulan Sutena — Ghosting (Lyric Video)",
    "thumb": "assets/thumb/bulan-sutena.jpg",
    "clip": "assets/clip/bulan-sutena.mp4"
   },
   {
-   "cat": "Ads",
+   "cat": "Ads & Marketing",
    "title": "Baju Raya Collection",
    "thumb": "assets/thumb/baju-raya.jpg",
    "clip": "assets/clip/baju-raya.mp4"

@@ -224,9 +224,11 @@
     say('Sediakan thumbnail…');
     try {
       const id = 'u' + stamp(), thumb = `assets/thumb/${id}.jpg`, clip = `assets/clip/${id}.mp4`;
-      addUpload(thumb, await videoThumb(file));
+      const tb = await videoThumb(file), bm = await createImageBitmap(tb);
+      addUpload(thumb, tb);
       addUpload(clip, file);
-      M().videos.unshift({cat, title: fd.title.trim(), thumb, clip});
+      // an uploaded file is the whole video: play it with sound; 9:16 gets the vertical card layout
+      M().videos.unshift({cat, title: fd.title.trim(), thumb, clip, full: true, ...(bm.height > bm.width ? {vertical: true} : {})});
       HJ.renderWork(); changed();
     } catch (e) { alert(e.message); updateBar(); }
   }
