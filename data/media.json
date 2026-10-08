@@ -1,6 +1,7 @@
 {
  "photoCats": [
   "Portrait",
+  "Street",
   "Events & Lifestyle",
   "Wedding",
   "Graduation"
@@ -215,6 +216,217 @@
     "assets/photo/portrait-urban-35.jpg",
     "assets/photo/portrait-urban-36.jpg",
     "assets/photo/portrait-urban-37.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "title": "Floral Portrait",
+   "album": true,
+   "photos": [
+    "assets/photo/portrait-floral-01.jpg",
+    "assets/photo/portrait-floral-02.jpg",
+    "assets/photo/portrait-floral-03.jpg",
+    "assets/photo/portrait-floral-04.jpg",
+    "assets/photo/portrait-floral-05.jpg",
+    "assets/photo/portrait-floral-06.jpg",
+    "assets/photo/portrait-floral-07.jpg",
+    "assets/photo/portrait-floral-08.jpg",
+    "assets/photo/portrait-floral-09.jpg",
+    "assets/photo/portrait-floral-10.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "title": "Highland Portrait",
+   "album": true,
+   "photos": [
+    "assets/photo/portrait-highland-01.jpg",
+    "assets/photo/portrait-highland-02.jpg",
+    "assets/photo/portrait-highland-03.jpg",
+    "assets/photo/portrait-highland-04.jpg",
+    "assets/photo/portrait-highland-05.jpg",
+    "assets/photo/portrait-highland-06.jpg",
+    "assets/photo/portrait-highland-07.jpg",
+    "assets/photo/portrait-highland-08.jpg",
+    "assets/photo/portrait-highland-09.jpg",
+    "assets/photo/portrait-highland-10.jpg",
+    "assets/photo/portrait-highland-11.jpg",
+    "assets/photo/portrait-highland-12.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "title": "Park Portrait",
+   "album": true,
+   "photos": [
+    "assets/photo/portrait-park-01.jpg",
+    "assets/photo/portrait-park-02.jpg",
+    "assets/photo/portrait-park-03.jpg",
+    "assets/photo/portrait-park-04.jpg",
+    "assets/photo/portrait-park-05.jpg",
+    "assets/photo/portrait-park-06.jpg",
+    "assets/photo/portrait-park-07.jpg",
+    "assets/photo/portrait-park-08.jpg",
+    "assets/photo/portrait-park-09.jpg",
+    "assets/photo/portrait-park-10.jpg",
+    "assets/photo/portrait-park-11.jpg",
+    "assets/photo/portrait-park-12.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-01.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-02.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-03.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-04.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-05.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-06.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-07.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-08.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-09.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-10.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-11.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "photos": [
+    "assets/photo/portrait-solo-12.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-01.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-02.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-03.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-04.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-05.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-06.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-07.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-08.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-09.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-10.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-11.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-12.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-13.jpg"
+   ]
+  },
+  {
+   "cat": "Street",
+   "photos": [
+    "assets/photo/street-14.jpg"
    ]
   },
   {
