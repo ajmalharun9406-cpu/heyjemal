@@ -3,7 +3,6 @@
   "Portrait",
   "Events & Lifestyle",
   "Wedding",
-  "Engagement",
   "Graduation"
  ],
  "videos": [
@@ -221,12 +220,6 @@
   {
    "cat": "Events & Lifestyle",
    "photos": [
-    "assets/photo/events-01.jpg"
-   ]
-  },
-  {
-   "cat": "Events & Lifestyle",
-   "photos": [
     "assets/photo/events-02.jpg"
    ]
   },
@@ -234,18 +227,6 @@
    "cat": "Events & Lifestyle",
    "photos": [
     "assets/photo/events-03.jpg"
-   ]
-  },
-  {
-   "cat": "Events & Lifestyle",
-   "photos": [
-    "assets/photo/events-04.jpg"
-   ]
-  },
-  {
-   "cat": "Events & Lifestyle",
-   "photos": [
-    "assets/photo/events-05.jpg"
    ]
   },
   {
@@ -288,36 +269,6 @@
    "cat": "Wedding",
    "photos": [
     "assets/photo/wedding-06.jpg"
-   ]
-  },
-  {
-   "cat": "Engagement",
-   "photos": [
-    "assets/photo/engagement-01.jpg"
-   ]
-  },
-  {
-   "cat": "Engagement",
-   "photos": [
-    "assets/photo/engagement-02.jpg"
-   ]
-  },
-  {
-   "cat": "Engagement",
-   "photos": [
-    "assets/photo/engagement-03.jpg"
-   ]
-  },
-  {
-   "cat": "Engagement",
-   "photos": [
-    "assets/photo/engagement-04.jpg"
-   ]
-  },
-  {
-   "cat": "Engagement",
-   "photos": [
-    "assets/photo/engagement-05.jpg"
    ]
   },
   {
