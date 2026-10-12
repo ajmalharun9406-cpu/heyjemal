@@ -8,7 +8,7 @@
  ],
  "videos": [
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "Adidas Hyperboost EPHR — Spec Ad",
    "thumb": "assets/thumb/hyperboost-ephr.jpg",
    "clip": "assets/clip/hyperboost-ephr.mp4",
@@ -16,7 +16,7 @@
    "full": true
   },
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "Toyota Urban Cruiser — Spec Ad",
    "thumb": "assets/thumb/toyota-urban-cruiser.jpg",
    "clip": "assets/clip/toyota-urban-cruiser.mp4",
@@ -24,166 +24,166 @@
    "full": true
   },
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "Arissto Coffee — Aidilfitri",
    "thumb": "assets/thumb/v-arissto-coffee-aidilfitri.jpg",
    "clip": "assets/clip/v-arissto-coffee-aidilfitri.mp4"
   },
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "Arissto — Kopi Itali Dari Itali",
    "thumb": "assets/thumb/v-arissto-kopi-itali-dari-itali.jpg",
    "clip": "assets/clip/v-arissto-kopi-itali-dari-itali.mp4"
   },
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "Baju Raya Collection",
    "thumb": "assets/thumb/v-baju-raya-collection.jpg",
    "clip": "assets/clip/v-baju-raya-collection.mp4"
   },
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "Dashing Diva",
    "thumb": "assets/thumb/v-dashing-diva.jpg",
    "clip": "assets/clip/v-dashing-diva.mp4"
   },
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "Doa Berbuka Puasa",
    "thumb": "assets/thumb/v-doa-berbuka-puasa.jpg",
    "clip": "assets/clip/v-doa-berbuka-puasa.mp4"
   },
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "Doa Sebelum Makan",
    "thumb": "assets/thumb/v-doa-sebelum-makan.jpg",
    "clip": "assets/clip/v-doa-sebelum-makan.mp4"
   },
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "JomRides — Manjit Part 3",
    "thumb": "assets/thumb/v-jomrides-manjit-part-3.jpg",
    "clip": "assets/clip/v-jomrides-manjit-part-3.mp4"
   },
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "TNBJ Raya 2018",
    "thumb": "assets/thumb/v-tnbj-raya-2018.jpg",
    "clip": "assets/clip/v-tnbj-raya-2018.mp4"
   },
   {
-   "cat": "Ads & Commercials",
+   "cat": "Ads & Marketing",
    "title": "WT Promo",
    "thumb": "assets/thumb/v-wt-promo.jpg",
    "clip": "assets/clip/v-wt-promo.mp4"
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Sambung Belajar",
    "thumb": "assets/thumb/v-sambung-belajar.jpg",
    "clip": "assets/clip/v-sambung-belajar.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Final Year Project Struggles",
    "thumb": "assets/thumb/v-final-year-project-struggles.jpg",
    "clip": "assets/clip/v-final-year-project-struggles.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "For Those Without Direction",
    "thumb": "assets/thumb/v-for-those-without-direction.jpg",
    "clip": "assets/clip/v-for-those-without-direction.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Thesis Stuck",
    "thumb": "assets/thumb/v-thesis-stuck.jpg",
    "clip": "assets/clip/v-thesis-stuck.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Compose",
    "thumb": "assets/thumb/v-compose.jpg",
    "clip": "assets/clip/v-compose.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Just Getting Started",
    "thumb": "assets/thumb/v-just-getting-started.jpg",
    "clip": "assets/clip/v-just-getting-started.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Testimonial — Dr Hasanah",
    "thumb": "assets/thumb/v-testimonial-dr-hasanah.jpg",
    "clip": "assets/clip/v-testimonial-dr-hasanah.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Testimonial — Mardhiyati",
    "thumb": "assets/thumb/v-testimonial-mardhiyati.jpg",
    "clip": "assets/clip/v-testimonial-mardhiyati.mp4",
    "fit": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Parents' Pride — PhD Scale 1",
    "thumb": "assets/thumb/v-parents-pride-phd-scale-1.jpg",
    "clip": "assets/clip/v-parents-pride-phd-scale-1.mp4",
    "fit": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Finish Your FYP the Easy Way",
    "thumb": "assets/thumb/v-finish-your-fyp-the-easy-way.jpg",
    "clip": "assets/clip/v-finish-your-fyp-the-easy-way.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Testimonial — Cikgu Dr Khasturi",
    "thumb": "assets/thumb/v-testimonial-cikgu-dr-khasturi.jpg",
    "clip": "assets/clip/v-testimonial-cikgu-dr-khasturi.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Mothers Pursuing Master & PhD",
    "thumb": "assets/thumb/v-mothers-pursuing-master-phd.jpg",
    "clip": "assets/clip/v-mothers-pursuing-master-phd.mp4",
    "fit": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Testimonial — Dr Sahlawati",
    "thumb": "assets/thumb/v-testimonial-dr-sahlawati.jpg",
    "clip": "assets/clip/v-testimonial-dr-sahlawati.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Testimonial — Ts Dr Nur Hidayah",
    "thumb": "assets/thumb/v-testimonial-ts-dr-nur-hidayah.jpg",
    "clip": "assets/clip/v-testimonial-ts-dr-nur-hidayah.mp4",
    "vertical": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Testimonial — Dr Farah",
    "thumb": "assets/thumb/v-testimonial-dr-farah.jpg",
    "clip": "assets/clip/v-testimonial-dr-farah.mp4",
    "fit": true
   },
   {
-   "cat": "Marketing Videos",
+   "cat": "Ads & Marketing",
    "title": "Sambung Belajar (Square)",
    "thumb": "assets/thumb/v-sambung-belajar-square.jpg",
    "clip": "assets/clip/v-sambung-belajar-square.mp4",
@@ -1094,8 +1094,7 @@
   }
  ],
  "videoCats": [
-  "Ads & Commercials",
-  "Marketing Videos",
+  "Ads & Marketing",
   "Motion Graphics",
   "Corporate",
   "Event Highlights",
