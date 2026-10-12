@@ -107,8 +107,32 @@ section{padding:clamp(72px,11vw,140px) 0}
    min-height:100% stretches it to the full two-row area when neighbours make the rows taller */
 .card.vert{grid-row:span 2;aspect-ratio:4/5;min-height:100%;width:100%;min-width:0}  /* width pinned: otherwise min-height is transferred through the ratio and widens the card */
 @media(max-width:700px){.card.vert{grid-row:auto}}
-.card.vert img.bg{inset:-24px;width:calc(100% + 48px);height:calc(100% + 48px);object-fit:cover;filter:blur(20px) brightness(.45);transform:none!important}
-.card.vert img:not(.bg),.card.vert video{object-fit:contain}
+.card.vert img.bg,.card.fit img.bg{inset:-24px;width:calc(100% + 48px);height:calc(100% + 48px);object-fit:cover;filter:blur(20px) brightness(.45);transform:none!important}
+.card.vert img:not(.bg),.card.vert video,.card.fit img:not(.bg),.card.fit video{object-fit:contain}
+
+/* "All" view: one horizontal shelf per segment */
+.shelves{display:flex;flex-direction:column;gap:44px}
+.shelf{position:relative}
+.shelf-head{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+.shelf-head h3{font-family:var(--display);font-size:clamp(24px,3vw,34px);text-transform:uppercase;letter-spacing:.01em}
+.shelf-head span{color:var(--muted);font-size:14px}
+.shelf-head .see{margin-left:auto;background:none;border:0;color:var(--accent-text);font:600 14px var(--body);cursor:pointer;white-space:nowrap}
+.shelf-head .see:hover{text-decoration:underline}
+.shelf-row{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;padding-bottom:2px}
+.shelf-row::-webkit-scrollbar{display:none}
+/* every card in a shelf shares one height; width follows its aspect (16:10, or 4:5 for vertical) */
+.shelf-row .card{flex:0 0 auto;height:clamp(160px,17vw,220px);width:auto;aspect-ratio:16/10;scroll-snap-align:start}
+.shelf-row .card.vert{aspect-ratio:4/5;grid-row:auto;min-height:0;width:auto}
+.shelf-row .card .meta h3{font-size:15px}
+.shelf-row .card .tag{display:none}   /* the shelf title already names the segment */
+.shelf-row .card.vert .meta{left:12px;right:12px;bottom:12px}
+.shelf-row .card.vert .meta h3{font-size:13px}
+@media(max-width:600px){.shelf-row .card{height:210px}}
+.shelf .sh{position:absolute;top:calc(50% + 22px);transform:translateY(-50%);z-index:3;width:44px;height:44px;border-radius:50%;border:1px solid #ffffff40;background:#0a0a0bd9;color:#fff;font-size:22px;cursor:pointer;opacity:0;transition:.2s}
+.shelf:hover .sh{opacity:1}
+.shelf .sh:hover{background:var(--accent)}
+.shelf .prev{left:-10px}.shelf .next{right:-10px}
+@media(hover:none){.shelf .sh{display:none}}
 
 /* photos */
 #photos{background:var(--bg2)}
@@ -227,7 +251,7 @@ footer{border-top:1px solid var(--line);padding:26px var(--pad);display:flex;jus
   <div class="wrap">
     <div class="sec-head reveal">
       <h2 class="display">Selected<br><span class="accent">Work</span></h2>
-      <p>Tap any card to watch a preview. A selection of ads, corporate films, event highlights, motion graphics, podcasts and short films.</p>
+      <p>Browse by segment, or tap any card to watch a preview. Ads, marketing videos, motion graphics, corporate films, event highlights, montages, podcasts and short films.</p>
     </div>
     <div class="filters" id="filters"></div>
     <div class="grid" id="grid"></div>
@@ -238,7 +262,7 @@ footer{border-top:1px solid var(--line);padding:26px var(--pad);display:flex;jus
   <div class="wrap">
     <div class="sec-head reveal">
       <h2 class="display">Behind the<br><span class="accent">Lens</span></h2>
-      <p>Portraits, events, weddings, engagements and graduations. Every frame is edited by hand to give it its own mood.</p>
+      <p>Portraits, street, events, weddings and graduations. Every frame is edited by hand to give it its own mood.</p>
     </div>
     <div class="filters" id="photoFilters"></div>
     <div class="masonry" id="masonry"></div>
@@ -322,6 +346,6 @@ footer{border-top:1px solid var(--line);padding:26px var(--pad);display:flex;jus
   </div>
 </div>
 
-<script src="site.js?v=2"></script>
+<script src="site.js?v=3"></script>
 </body>
 </html>

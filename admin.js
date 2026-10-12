@@ -216,7 +216,7 @@
     if (!file) return;
     if (file.size > 90e6) return alert('Video lebih 90MB. Potong jadi preview pendek (cth 15–30 saat) atau compress dulu.');
     if (file.size > 40e6 && !confirm('Video ni besar (' + Math.round(file.size / 1e6) + 'MB) dan akan buat website lambat. Teruskan?')) return;
-    const cats = [...new Set(M().videos.map(v => v.cat))];
+    const cats = [...new Set([...(M().videoCats || []), ...M().videos.map(v => v.cat)])];
     const fd = await ask('Video baru', `<label>Tajuk</label><input name="title" required value="${esc(file.name.replace(/\.[^.]+$/, ''))}">` +
       catField(cats, activeFilter('filters')), 'Tambah');
     if (!fd) return;
@@ -240,7 +240,7 @@
     HJ.renderWork(); changed();
   }
   async function editVideo(i) {
-    const v = M().videos[i], cats = [...new Set(M().videos.map(x => x.cat))];
+    const v = M().videos[i], cats = [...new Set([...(M().videoCats || []), ...M().videos.map(x => x.cat)])];
     const fd = await ask('Edit video', `<label>Tajuk</label><input name="title" required value="${esc(v.title)}">` + catField(cats, v.cat), 'Simpan');
     if (!fd) return;
     const cat = pickCat(fd); if (!cat) return;

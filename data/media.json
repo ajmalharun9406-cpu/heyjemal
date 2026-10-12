@@ -8,7 +8,7 @@
  ],
  "videos": [
   {
-   "cat": "Ads & Marketing",
+   "cat": "Ads & Commercials",
    "title": "Adidas Hyperboost EPHR — Spec Ad",
    "thumb": "assets/thumb/hyperboost-ephr.jpg",
    "clip": "assets/clip/hyperboost-ephr.mp4",
@@ -16,7 +16,7 @@
    "full": true
   },
   {
-   "cat": "Ads & Marketing",
+   "cat": "Ads & Commercials",
    "title": "Toyota Urban Cruiser — Spec Ad",
    "thumb": "assets/thumb/toyota-urban-cruiser.jpg",
    "clip": "assets/clip/toyota-urban-cruiser.mp4",
@@ -24,124 +24,551 @@
    "full": true
   },
   {
-   "cat": "Ads & Marketing",
+   "cat": "Ads & Commercials",
    "title": "Arissto Coffee — Aidilfitri",
-   "thumb": "assets/thumb/arissto-raya.jpg",
-   "clip": "assets/clip/arissto-raya.mp4"
+   "thumb": "assets/thumb/v-arissto-coffee-aidilfitri.jpg",
+   "clip": "assets/clip/v-arissto-coffee-aidilfitri.mp4"
   },
   {
-   "cat": "Ads & Marketing",
-   "title": "Dashing Diva",
-   "thumb": "assets/thumb/dashing-diva.jpg",
-   "clip": "assets/clip/dashing-diva.mp4"
+   "cat": "Ads & Commercials",
+   "title": "Arissto — Kopi Itali Dari Itali",
+   "thumb": "assets/thumb/v-arissto-kopi-itali-dari-itali.jpg",
+   "clip": "assets/clip/v-arissto-kopi-itali-dari-itali.mp4"
   },
   {
-   "cat": "Ads & Marketing",
-   "title": "Bulan Sutena — Ghosting (Lyric Video)",
-   "thumb": "assets/thumb/bulan-sutena.jpg",
-   "clip": "assets/clip/bulan-sutena.mp4"
-  },
-  {
-   "cat": "Ads & Marketing",
+   "cat": "Ads & Commercials",
    "title": "Baju Raya Collection",
-   "thumb": "assets/thumb/baju-raya.jpg",
-   "clip": "assets/clip/baju-raya.mp4"
+   "thumb": "assets/thumb/v-baju-raya-collection.jpg",
+   "clip": "assets/clip/v-baju-raya-collection.mp4"
   },
   {
-   "cat": "Motion",
-   "title": "Jom! JomRides",
-   "thumb": "assets/thumb/jomrides.jpg",
-   "clip": "assets/clip/jomrides.mp4"
+   "cat": "Ads & Commercials",
+   "title": "Dashing Diva",
+   "thumb": "assets/thumb/v-dashing-diva.jpg",
+   "clip": "assets/clip/v-dashing-diva.mp4"
   },
   {
-   "cat": "Motion",
-   "title": "Cenviro — Marvel Montage",
-   "thumb": "assets/thumb/cenviro-marvel.jpg",
-   "clip": "assets/clip/cenviro-marvel.mp4"
+   "cat": "Ads & Commercials",
+   "title": "Doa Berbuka Puasa",
+   "thumb": "assets/thumb/v-doa-berbuka-puasa.jpg",
+   "clip": "assets/clip/v-doa-berbuka-puasa.mp4"
   },
   {
-   "cat": "Motion",
+   "cat": "Ads & Commercials",
+   "title": "Doa Sebelum Makan",
+   "thumb": "assets/thumb/v-doa-sebelum-makan.jpg",
+   "clip": "assets/clip/v-doa-sebelum-makan.mp4"
+  },
+  {
+   "cat": "Ads & Commercials",
+   "title": "JomRides — Manjit Part 3",
+   "thumb": "assets/thumb/v-jomrides-manjit-part-3.jpg",
+   "clip": "assets/clip/v-jomrides-manjit-part-3.mp4"
+  },
+  {
+   "cat": "Ads & Commercials",
+   "title": "TNBJ Raya 2018",
+   "thumb": "assets/thumb/v-tnbj-raya-2018.jpg",
+   "clip": "assets/clip/v-tnbj-raya-2018.mp4"
+  },
+  {
+   "cat": "Ads & Commercials",
+   "title": "WT Promo",
+   "thumb": "assets/thumb/v-wt-promo.jpg",
+   "clip": "assets/clip/v-wt-promo.mp4"
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Sambung Belajar",
+   "thumb": "assets/thumb/v-sambung-belajar.jpg",
+   "clip": "assets/clip/v-sambung-belajar.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Final Year Project Struggles",
+   "thumb": "assets/thumb/v-final-year-project-struggles.jpg",
+   "clip": "assets/clip/v-final-year-project-struggles.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "For Those Without Direction",
+   "thumb": "assets/thumb/v-for-those-without-direction.jpg",
+   "clip": "assets/clip/v-for-those-without-direction.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Thesis Stuck",
+   "thumb": "assets/thumb/v-thesis-stuck.jpg",
+   "clip": "assets/clip/v-thesis-stuck.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Compose",
+   "thumb": "assets/thumb/v-compose.jpg",
+   "clip": "assets/clip/v-compose.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Just Getting Started",
+   "thumb": "assets/thumb/v-just-getting-started.jpg",
+   "clip": "assets/clip/v-just-getting-started.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Testimonial — Dr Hasanah",
+   "thumb": "assets/thumb/v-testimonial-dr-hasanah.jpg",
+   "clip": "assets/clip/v-testimonial-dr-hasanah.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Testimonial — Mardhiyati",
+   "thumb": "assets/thumb/v-testimonial-mardhiyati.jpg",
+   "clip": "assets/clip/v-testimonial-mardhiyati.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Parents' Pride — PhD Scale 1",
+   "thumb": "assets/thumb/v-parents-pride-phd-scale-1.jpg",
+   "clip": "assets/clip/v-parents-pride-phd-scale-1.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Finish Your FYP the Easy Way",
+   "thumb": "assets/thumb/v-finish-your-fyp-the-easy-way.jpg",
+   "clip": "assets/clip/v-finish-your-fyp-the-easy-way.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Testimonial — Cikgu Dr Khasturi",
+   "thumb": "assets/thumb/v-testimonial-cikgu-dr-khasturi.jpg",
+   "clip": "assets/clip/v-testimonial-cikgu-dr-khasturi.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Mothers Pursuing Master & PhD",
+   "thumb": "assets/thumb/v-mothers-pursuing-master-phd.jpg",
+   "clip": "assets/clip/v-mothers-pursuing-master-phd.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Testimonial — Dr Sahlawati",
+   "thumb": "assets/thumb/v-testimonial-dr-sahlawati.jpg",
+   "clip": "assets/clip/v-testimonial-dr-sahlawati.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Testimonial — Ts Dr Nur Hidayah",
+   "thumb": "assets/thumb/v-testimonial-ts-dr-nur-hidayah.jpg",
+   "clip": "assets/clip/v-testimonial-ts-dr-nur-hidayah.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Testimonial — Dr Farah",
+   "thumb": "assets/thumb/v-testimonial-dr-farah.jpg",
+   "clip": "assets/clip/v-testimonial-dr-farah.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Marketing Videos",
+   "title": "Sambung Belajar (Square)",
+   "thumb": "assets/thumb/v-sambung-belajar-square.jpg",
+   "clip": "assets/clip/v-sambung-belajar-square.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "Event Intro",
+   "thumb": "assets/thumb/v-event-intro.jpg",
+   "clip": "assets/clip/v-event-intro.mp4"
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "Backdrop Animation",
+   "thumb": "assets/thumb/v-backdrop-animation.jpg",
+   "clip": "assets/clip/v-backdrop-animation.mp4"
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "Johawaki — LED Backdrop",
+   "thumb": "assets/thumb/v-johawaki-led-backdrop.jpg",
+   "clip": "assets/clip/v-johawaki-led-backdrop.mp4"
+  },
+  {
+   "cat": "Motion Graphics",
    "title": "Faiza Trivia Animation",
-   "thumb": "assets/thumb/faiza-trivia.jpg",
-   "clip": "assets/clip/faiza-trivia.mp4"
+   "thumb": "assets/thumb/v-faiza-trivia-animation.jpg",
+   "clip": "assets/clip/v-faiza-trivia-animation.mp4"
   },
   {
-   "cat": "Motion",
-   "title": "JomRides — App Tutorial",
-   "thumb": "assets/thumb/jomrides-tutorial.jpg",
-   "clip": "assets/clip/jomrides-tutorial.mp4"
+   "cat": "Motion Graphics",
+   "title": "Jom! JomRides",
+   "thumb": "assets/thumb/v-jom-jomrides.jpg",
+   "clip": "assets/clip/v-jom-jomrides.mp4"
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "JomRides — Forex",
+   "thumb": "assets/thumb/v-jomrides-forex.jpg",
+   "clip": "assets/clip/v-jomrides-forex.mp4"
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "JomRides — Driver App Tutorial",
+   "thumb": "assets/thumb/v-jomrides-driver-app-tutorial.jpg",
+   "clip": "assets/clip/v-jomrides-driver-app-tutorial.mp4"
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "JomRides — Passenger App Tutorial",
+   "thumb": "assets/thumb/v-jomrides-passenger-app-tutorial.jpg",
+   "clip": "assets/clip/v-jomrides-passenger-app-tutorial.mp4"
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "JomRides — Manjit Part 1",
+   "thumb": "assets/thumb/v-jomrides-manjit-part-1.jpg",
+   "clip": "assets/clip/v-jomrides-manjit-part-1.mp4"
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "JomRides — Manjit Part 2",
+   "thumb": "assets/thumb/v-jomrides-manjit-part-2.jpg",
+   "clip": "assets/clip/v-jomrides-manjit-part-2.mp4"
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "MyHero — Vertical Montage",
+   "thumb": "assets/thumb/v-myhero-vertical-montage.jpg",
+   "clip": "assets/clip/v-myhero-vertical-montage.mp4",
+   "vertical": true
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "Event Promo",
+   "thumb": "assets/thumb/v-event-promo.jpg",
+   "clip": "assets/clip/v-event-promo.mp4"
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "Cenviro — Marvel Montage",
+   "thumb": "assets/thumb/v-cenviro-marvel-montage.jpg",
+   "clip": "assets/clip/v-cenviro-marvel-montage.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "Cenviro — Montage Gimmick",
+   "thumb": "assets/thumb/v-cenviro-montage-gimmick.jpg",
+   "clip": "assets/clip/v-cenviro-montage-gimmick.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Motion Graphics",
+   "title": "Cenviro — Main Backdrop",
+   "thumb": "assets/thumb/v-cenviro-main-backdrop.jpg",
+   "clip": "assets/clip/v-cenviro-main-backdrop.mp4",
+   "fit": true
   },
   {
    "cat": "Corporate",
-   "title": "TNBF Corporate Video",
-   "thumb": "assets/thumb/tnbf-corporate.jpg",
-   "clip": "assets/clip/tnbf-corporate.mp4"
+   "title": "Balikpapan Power Station",
+   "thumb": "assets/thumb/v-balikpapan-power-station.jpg",
+   "clip": "assets/clip/v-balikpapan-power-station.mp4"
+  },
+  {
+   "cat": "Corporate",
+   "title": "Better Nation — Pasir Gudang",
+   "thumb": "assets/thumb/v-better-nation-pasir-gudang.jpg",
+   "clip": "assets/clip/v-better-nation-pasir-gudang.mp4"
   },
   {
    "cat": "Corporate",
    "title": "Cenviro Corporate Video",
-   "thumb": "assets/thumb/cenviro-corporate.jpg",
-   "clip": "assets/clip/cenviro-corporate.mp4"
+   "thumb": "assets/thumb/v-cenviro-corporate-video.jpg",
+   "clip": "assets/clip/v-cenviro-corporate-video.mp4"
+  },
+  {
+   "cat": "Corporate",
+   "title": "SJSI Paka 2019 — Film",
+   "thumb": "assets/thumb/v-sjsi-paka-2019-film.jpg",
+   "clip": "assets/clip/v-sjsi-paka-2019-film.mp4"
   },
   {
    "cat": "Corporate",
    "title": "Kambyan — Interview & Drone",
-   "thumb": "assets/thumb/kambyan.jpg",
-   "clip": "assets/clip/kambyan.mp4"
+   "thumb": "assets/thumb/v-kambyan-interview-drone.jpg",
+   "clip": "assets/clip/v-kambyan-interview-drone.mp4"
+  },
+  {
+   "cat": "Corporate",
+   "title": "Manjung 5 (2017)",
+   "thumb": "assets/thumb/v-manjung-5-2017.jpg",
+   "clip": "assets/clip/v-manjung-5-2017.mp4"
+  },
+  {
+   "cat": "Corporate",
+   "title": "MyExpo 2017",
+   "thumb": "assets/thumb/v-myexpo-2017.jpg",
+   "clip": "assets/clip/v-myexpo-2017.mp4"
+  },
+  {
+   "cat": "Corporate",
+   "title": "TNBJ 20th Anniversary",
+   "thumb": "assets/thumb/v-tnbj-20th-anniversary.jpg",
+   "clip": "assets/clip/v-tnbj-20th-anniversary.mp4"
+  },
+  {
+   "cat": "Corporate",
+   "title": "Sri Bestari School",
+   "thumb": "assets/thumb/v-sri-bestari-school.jpg",
+   "clip": "assets/clip/v-sri-bestari-school.mp4"
   },
   {
    "cat": "Corporate",
    "title": "The VUP Story",
-   "thumb": "assets/thumb/vup-story.jpg",
-   "clip": "assets/clip/vup-story.mp4"
+   "thumb": "assets/thumb/v-the-vup-story.jpg",
+   "clip": "assets/clip/v-the-vup-story.mp4"
   },
   {
-   "cat": "Event",
-   "title": "RICM 2022 Highlight",
-   "thumb": "assets/thumb/ricm-2022.jpg",
-   "clip": "assets/clip/ricm-2022.mp4"
+   "cat": "Corporate",
+   "title": "TNB Earth Hour",
+   "thumb": "assets/thumb/v-tnb-earth-hour.jpg",
+   "clip": "assets/clip/v-tnb-earth-hour.mp4"
   },
   {
-   "cat": "Event",
-   "title": "Genting — Drone x Text",
-   "thumb": "assets/thumb/genting-drone.jpg",
-   "clip": "assets/clip/genting-drone.mp4"
+   "cat": "Corporate",
+   "title": "TNB Women's Day Highlight",
+   "thumb": "assets/thumb/v-tnb-women-s-day-highlight.jpg",
+   "clip": "assets/clip/v-tnb-women-s-day-highlight.mp4"
   },
   {
-   "cat": "Event",
-   "title": "JMFR '19 Highlight",
-   "thumb": "assets/thumb/jmfr-19.jpg",
-   "clip": "assets/clip/jmfr-19.mp4"
+   "cat": "Corporate",
+   "title": "TNBF Corporate Video",
+   "thumb": "assets/thumb/v-tnbf-corporate-video.jpg",
+   "clip": "assets/clip/v-tnbf-corporate-video.mp4"
   },
   {
-   "cat": "Event",
+   "cat": "Corporate",
+   "title": "2MW Corporate Video",
+   "thumb": "assets/thumb/v-2mw-corporate-video.jpg",
+   "clip": "assets/clip/v-2mw-corporate-video.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "ACR 2017 Highlights",
+   "thumb": "assets/thumb/v-acr-2017-highlights.jpg",
+   "clip": "assets/clip/v-acr-2017-highlights.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "Cenviro Annual Dinner 2017",
+   "thumb": "assets/thumb/v-cenviro-annual-dinner-2017.jpg",
+   "clip": "assets/clip/v-cenviro-annual-dinner-2017.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "EPIC 2017 Highlights",
+   "thumb": "assets/thumb/v-epic-2017-highlights.jpg",
+   "clip": "assets/clip/v-epic-2017-highlights.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "Koperasi Tentera Highlight",
+   "thumb": "assets/thumb/v-koperasi-tentera-highlight.jpg",
+   "clip": "assets/clip/v-koperasi-tentera-highlight.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "Seminar Gempur 2019 — Dr Roket TV",
+   "thumb": "assets/thumb/v-seminar-gempur-2019-dr-roket-tv.jpg",
+   "clip": "assets/clip/v-seminar-gempur-2019-dr-roket-tv.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "JMFR 2019 Highlight",
+   "thumb": "assets/thumb/v-jmfr-2019-highlight.jpg",
+   "clip": "assets/clip/v-jmfr-2019-highlight.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "JMFR 2018 Highlights",
+   "thumb": "assets/thumb/v-jmfr-2018-highlights.jpg",
+   "clip": "assets/clip/v-jmfr-2018-highlights.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "Johawaki Dinner Launch",
+   "thumb": "assets/thumb/v-johawaki-dinner-launch.jpg",
+   "clip": "assets/clip/v-johawaki-dinner-launch.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "Johawaki Karaoke Night 2017",
+   "thumb": "assets/thumb/v-johawaki-karaoke-night-2017.jpg",
+   "clip": "assets/clip/v-johawaki-karaoke-night-2017.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "Johawaki Retro Night 2017",
+   "thumb": "assets/thumb/v-johawaki-retro-night-2017.jpg",
+   "clip": "assets/clip/v-johawaki-retro-night-2017.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "MyExpo Ground Breaking Ceremony",
+   "thumb": "assets/thumb/v-myexpo-ground-breaking-ceremony.jpg",
+   "clip": "assets/clip/v-myexpo-ground-breaking-ceremony.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "NUT Special Highlight",
+   "thumb": "assets/thumb/v-nut-special-highlight.jpg",
+   "clip": "assets/clip/v-nut-special-highlight.mp4"
+  },
+  {
+   "cat": "Event Highlights",
    "title": "PTP Highlight",
-   "thumb": "assets/thumb/ptp-highlight.jpg",
-   "clip": "assets/clip/ptp-highlight.mp4"
+   "thumb": "assets/thumb/v-ptp-highlight.jpg",
+   "clip": "assets/clip/v-ptp-highlight.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "RICM 2022 Highlight",
+   "thumb": "assets/thumb/v-ricm-2022-highlight.jpg",
+   "clip": "assets/clip/v-ricm-2022-highlight.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "Tok Yang's Birthday",
+   "thumb": "assets/thumb/v-tok-yang-s-birthday.jpg",
+   "clip": "assets/clip/v-tok-yang-s-birthday.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "TSM Day 1 Highlight",
+   "thumb": "assets/thumb/v-tsm-day-1-highlight.jpg",
+   "clip": "assets/clip/v-tsm-day-1-highlight.mp4"
+  },
+  {
+   "cat": "Event Highlights",
+   "title": "TSM Day 3 Highlight",
+   "thumb": "assets/thumb/v-tsm-day-3-highlight.jpg",
+   "clip": "assets/clip/v-tsm-day-3-highlight.mp4"
+  },
+  {
+   "cat": "Montage",
+   "title": "Cenviro Pledge",
+   "thumb": "assets/thumb/v-cenviro-pledge.jpg",
+   "clip": "assets/clip/v-cenviro-pledge.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Montage",
+   "title": "Kualiti Alam — Sustainability Fund",
+   "thumb": "assets/thumb/v-kualiti-alam-sustainability-fund.jpg",
+   "clip": "assets/clip/v-kualiti-alam-sustainability-fund.mp4"
+  },
+  {
+   "cat": "Montage",
+   "title": "Genting — Drone x Text",
+   "thumb": "assets/thumb/v-genting-drone-x-text.jpg",
+   "clip": "assets/clip/v-genting-drone-x-text.mp4"
+  },
+  {
+   "cat": "Montage",
+   "title": "Kompleks Endokrin Montage",
+   "thumb": "assets/thumb/v-kompleks-endokrin-montage.jpg",
+   "clip": "assets/clip/v-kompleks-endokrin-montage.mp4"
+  },
+  {
+   "cat": "Montage",
+   "title": "Montage Gimmick",
+   "thumb": "assets/thumb/v-montage-gimmick.jpg",
+   "clip": "assets/clip/v-montage-gimmick.mp4"
+  },
+  {
+   "cat": "Montage",
+   "title": "MyExpo Montage",
+   "thumb": "assets/thumb/v-myexpo-montage.jpg",
+   "clip": "assets/clip/v-myexpo-montage.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Montage",
+   "title": "Recycle For Life",
+   "thumb": "assets/thumb/v-recycle-for-life.jpg",
+   "clip": "assets/clip/v-recycle-for-life.mp4"
+  },
+  {
+   "cat": "Montage",
+   "title": "RIC Part 1",
+   "thumb": "assets/thumb/v-ric-part-1.jpg",
+   "clip": "assets/clip/v-ric-part-1.mp4",
+   "fit": true
+  },
+  {
+   "cat": "Montage",
+   "title": "RIC Part 2 Highlight",
+   "thumb": "assets/thumb/v-ric-part-2-highlight.jpg",
+   "clip": "assets/clip/v-ric-part-2-highlight.mp4"
+  },
+  {
+   "cat": "Montage",
+   "title": "Tok Yang's Memory Lane",
+   "thumb": "assets/thumb/v-tok-yang-s-memory-lane.jpg",
+   "clip": "assets/clip/v-tok-yang-s-memory-lane.mp4"
   },
   {
    "cat": "Podcast",
-   "title": "Podcast — Leona Chin",
-   "thumb": "assets/thumb/leona-chin.jpg",
-   "clip": "assets/clip/leona-chin.mp4"
+   "title": "Podcast — 3D Jelly",
+   "thumb": "assets/thumb/v-podcast-3d-jelly.jpg",
+   "clip": "assets/clip/v-podcast-3d-jelly.mp4",
+   "fit": true
   },
   {
    "cat": "Podcast",
    "title": "Podcast — Leng Yein",
-   "thumb": "assets/thumb/leng-yein.jpg",
-   "clip": "assets/clip/leng-yein.mp4"
+   "thumb": "assets/thumb/v-podcast-leng-yein.jpg",
+   "clip": "assets/clip/v-podcast-leng-yein.mp4"
   },
   {
-   "cat": "Short Film",
-   "title": "Ph.D. Journey vs COVID-19",
-   "thumb": "assets/thumb/phd-covid.jpg",
-   "clip": "assets/clip/phd-covid.mp4"
+   "cat": "Podcast",
+   "title": "Podcast — Leona Chin",
+   "thumb": "assets/thumb/v-podcast-leona-chin.jpg",
+   "clip": "assets/clip/v-podcast-leona-chin.mp4"
   },
   {
-   "cat": "Short Film",
+   "cat": "Podcast",
+   "title": "Podcast — Lio",
+   "thumb": "assets/thumb/v-podcast-lio.jpg",
+   "clip": "assets/clip/v-podcast-lio.mp4"
+  },
+  {
+   "cat": "Short Films",
    "title": "B.E.R.K.O.R.B.A.N. (Part 2)",
-   "thumb": "assets/thumb/berkorban.jpg",
-   "clip": "assets/clip/berkorban.mp4"
+   "thumb": "assets/thumb/v-b-e-r-k-o-r-b-a-n-part-2.jpg",
+   "clip": "assets/clip/v-b-e-r-k-o-r-b-a-n-part-2.mp4"
+  },
+  {
+   "cat": "Short Films",
+   "title": "Ph.D. Journey vs COVID-19",
+   "thumb": "assets/thumb/v-ph-d-journey-vs-covid-19.jpg",
+   "clip": "assets/clip/v-ph-d-journey-vs-covid-19.mp4"
   }
  ],
  "photos": [
@@ -150,28 +577,46 @@
    "title": "Garden Portrait",
    "album": true,
    "photos": [
-    "assets/photo/portrait-garden-01.jpg",
-    "assets/photo/portrait-garden-02.jpg",
-    "assets/photo/portrait-garden-03.jpg",
-    "assets/photo/portrait-garden-04.jpg",
-    "assets/photo/portrait-garden-05.jpg",
-    "assets/photo/portrait-garden-06.jpg",
-    "assets/photo/portrait-garden-07.jpg",
-    "assets/photo/portrait-garden-08.jpg",
-    "assets/photo/portrait-garden-09.jpg",
-    "assets/photo/portrait-garden-10.jpg",
-    "assets/photo/portrait-garden-11.jpg",
-    "assets/photo/portrait-garden-12.jpg",
-    "assets/photo/portrait-garden-13.jpg",
-    "assets/photo/portrait-garden-14.jpg",
-    "assets/photo/portrait-garden-15.jpg",
-    "assets/photo/portrait-garden-16.jpg",
-    "assets/photo/portrait-garden-17.jpg",
-    "assets/photo/portrait-garden-18.jpg",
-    "assets/photo/portrait-garden-19.jpg",
-    "assets/photo/portrait-garden-20.jpg",
-    "assets/photo/portrait-garden-21.jpg",
-    "assets/photo/portrait-garden-22.jpg"
+    "assets/photo/pt2-garden-01.jpg",
+    "assets/photo/pt2-garden-02.jpg",
+    "assets/photo/pt2-garden-03.jpg",
+    "assets/photo/pt2-garden-04.jpg",
+    "assets/photo/pt2-garden-05.jpg",
+    "assets/photo/pt2-garden-06.jpg",
+    "assets/photo/pt2-garden-07.jpg",
+    "assets/photo/pt2-garden-08.jpg",
+    "assets/photo/pt2-garden-09.jpg",
+    "assets/photo/pt2-garden-10.jpg",
+    "assets/photo/pt2-garden-11.jpg",
+    "assets/photo/pt2-garden-12.jpg",
+    "assets/photo/pt2-garden-13.jpg",
+    "assets/photo/pt2-garden-14.jpg",
+    "assets/photo/pt2-garden-15.jpg",
+    "assets/photo/pt2-garden-16.jpg",
+    "assets/photo/pt2-garden-17.jpg",
+    "assets/photo/pt2-garden-18.jpg",
+    "assets/photo/pt2-garden-19.jpg",
+    "assets/photo/pt2-garden-20.jpg",
+    "assets/photo/pt2-garden-21.jpg",
+    "assets/photo/pt2-garden-22.jpg",
+    "assets/photo/pt2-garden-23.jpg",
+    "assets/photo/pt2-garden-24.jpg",
+    "assets/photo/pt2-garden-25.jpg",
+    "assets/photo/pt2-garden-26.jpg",
+    "assets/photo/pt2-garden-27.jpg",
+    "assets/photo/pt2-garden-28.jpg",
+    "assets/photo/pt2-garden-29.jpg",
+    "assets/photo/pt2-garden-30.jpg",
+    "assets/photo/pt2-garden-31.jpg",
+    "assets/photo/pt2-garden-32.jpg",
+    "assets/photo/pt2-garden-33.jpg",
+    "assets/photo/pt2-garden-34.jpg",
+    "assets/photo/pt2-garden-35.jpg",
+    "assets/photo/pt2-garden-36.jpg",
+    "assets/photo/pt2-garden-37.jpg",
+    "assets/photo/pt2-garden-38.jpg",
+    "assets/photo/pt2-garden-39.jpg",
+    "assets/photo/pt2-garden-40.jpg"
    ]
   },
   {
@@ -223,16 +668,36 @@
    "title": "Floral Portrait",
    "album": true,
    "photos": [
-    "assets/photo/portrait-floral-01.jpg",
-    "assets/photo/portrait-floral-02.jpg",
-    "assets/photo/portrait-floral-03.jpg",
-    "assets/photo/portrait-floral-04.jpg",
-    "assets/photo/portrait-floral-05.jpg",
-    "assets/photo/portrait-floral-06.jpg",
-    "assets/photo/portrait-floral-07.jpg",
-    "assets/photo/portrait-floral-08.jpg",
-    "assets/photo/portrait-floral-09.jpg",
-    "assets/photo/portrait-floral-10.jpg"
+    "assets/photo/pt2-floral-01.jpg",
+    "assets/photo/pt2-floral-02.jpg",
+    "assets/photo/pt2-floral-03.jpg",
+    "assets/photo/pt2-floral-04.jpg",
+    "assets/photo/pt2-floral-05.jpg",
+    "assets/photo/pt2-floral-06.jpg",
+    "assets/photo/pt2-floral-07.jpg",
+    "assets/photo/pt2-floral-08.jpg",
+    "assets/photo/pt2-floral-09.jpg",
+    "assets/photo/pt2-floral-10.jpg",
+    "assets/photo/pt2-floral-11.jpg",
+    "assets/photo/pt2-floral-12.jpg",
+    "assets/photo/pt2-floral-13.jpg",
+    "assets/photo/pt2-floral-14.jpg",
+    "assets/photo/pt2-floral-15.jpg",
+    "assets/photo/pt2-floral-16.jpg",
+    "assets/photo/pt2-floral-17.jpg",
+    "assets/photo/pt2-floral-18.jpg",
+    "assets/photo/pt2-floral-19.jpg",
+    "assets/photo/pt2-floral-20.jpg",
+    "assets/photo/pt2-floral-21.jpg",
+    "assets/photo/pt2-floral-22.jpg",
+    "assets/photo/pt2-floral-23.jpg",
+    "assets/photo/pt2-floral-24.jpg",
+    "assets/photo/pt2-floral-25.jpg",
+    "assets/photo/pt2-floral-26.jpg",
+    "assets/photo/pt2-floral-27.jpg",
+    "assets/photo/pt2-floral-28.jpg",
+    "assets/photo/pt2-floral-29.jpg",
+    "assets/photo/pt2-floral-30.jpg"
    ]
   },
   {
@@ -240,18 +705,41 @@
    "title": "Highland Portrait",
    "album": true,
    "photos": [
-    "assets/photo/portrait-highland-01.jpg",
-    "assets/photo/portrait-highland-02.jpg",
-    "assets/photo/portrait-highland-03.jpg",
-    "assets/photo/portrait-highland-04.jpg",
-    "assets/photo/portrait-highland-05.jpg",
-    "assets/photo/portrait-highland-06.jpg",
-    "assets/photo/portrait-highland-07.jpg",
-    "assets/photo/portrait-highland-08.jpg",
-    "assets/photo/portrait-highland-09.jpg",
-    "assets/photo/portrait-highland-10.jpg",
-    "assets/photo/portrait-highland-11.jpg",
-    "assets/photo/portrait-highland-12.jpg"
+    "assets/photo/pt2-highland-01.jpg",
+    "assets/photo/pt2-highland-02.jpg",
+    "assets/photo/pt2-highland-03.jpg",
+    "assets/photo/pt2-highland-04.jpg",
+    "assets/photo/pt2-highland-05.jpg",
+    "assets/photo/pt2-highland-06.jpg",
+    "assets/photo/pt2-highland-07.jpg",
+    "assets/photo/pt2-highland-08.jpg",
+    "assets/photo/pt2-highland-09.jpg",
+    "assets/photo/pt2-highland-10.jpg",
+    "assets/photo/pt2-highland-11.jpg",
+    "assets/photo/pt2-highland-12.jpg",
+    "assets/photo/pt2-highland-13.jpg",
+    "assets/photo/pt2-highland-14.jpg",
+    "assets/photo/pt2-highland-15.jpg",
+    "assets/photo/pt2-highland-16.jpg",
+    "assets/photo/pt2-highland-17.jpg",
+    "assets/photo/pt2-highland-18.jpg",
+    "assets/photo/pt2-highland-19.jpg",
+    "assets/photo/pt2-highland-20.jpg",
+    "assets/photo/pt2-highland-21.jpg",
+    "assets/photo/pt2-highland-22.jpg",
+    "assets/photo/pt2-highland-23.jpg",
+    "assets/photo/pt2-highland-24.jpg",
+    "assets/photo/pt2-highland-25.jpg",
+    "assets/photo/pt2-highland-26.jpg",
+    "assets/photo/pt2-highland-27.jpg",
+    "assets/photo/pt2-highland-28.jpg",
+    "assets/photo/pt2-highland-29.jpg",
+    "assets/photo/pt2-highland-30.jpg",
+    "assets/photo/pt2-highland-31.jpg",
+    "assets/photo/pt2-highland-32.jpg",
+    "assets/photo/pt2-highland-33.jpg",
+    "assets/photo/pt2-highland-34.jpg",
+    "assets/photo/pt2-highland-35.jpg"
    ]
   },
   {
@@ -259,18 +747,121 @@
    "title": "Park Portrait",
    "album": true,
    "photos": [
-    "assets/photo/portrait-park-01.jpg",
-    "assets/photo/portrait-park-02.jpg",
-    "assets/photo/portrait-park-03.jpg",
-    "assets/photo/portrait-park-04.jpg",
-    "assets/photo/portrait-park-05.jpg",
-    "assets/photo/portrait-park-06.jpg",
-    "assets/photo/portrait-park-07.jpg",
-    "assets/photo/portrait-park-08.jpg",
-    "assets/photo/portrait-park-09.jpg",
-    "assets/photo/portrait-park-10.jpg",
-    "assets/photo/portrait-park-11.jpg",
-    "assets/photo/portrait-park-12.jpg"
+    "assets/photo/pt2-park-01.jpg",
+    "assets/photo/pt2-park-02.jpg",
+    "assets/photo/pt2-park-03.jpg",
+    "assets/photo/pt2-park-04.jpg",
+    "assets/photo/pt2-park-05.jpg",
+    "assets/photo/pt2-park-06.jpg",
+    "assets/photo/pt2-park-07.jpg",
+    "assets/photo/pt2-park-08.jpg",
+    "assets/photo/pt2-park-09.jpg",
+    "assets/photo/pt2-park-10.jpg",
+    "assets/photo/pt2-park-11.jpg",
+    "assets/photo/pt2-park-12.jpg",
+    "assets/photo/pt2-park-13.jpg",
+    "assets/photo/pt2-park-14.jpg",
+    "assets/photo/pt2-park-15.jpg",
+    "assets/photo/pt2-park-16.jpg",
+    "assets/photo/pt2-park-17.jpg",
+    "assets/photo/pt2-park-18.jpg",
+    "assets/photo/pt2-park-19.jpg",
+    "assets/photo/pt2-park-20.jpg",
+    "assets/photo/pt2-park-21.jpg",
+    "assets/photo/pt2-park-22.jpg",
+    "assets/photo/pt2-park-23.jpg",
+    "assets/photo/pt2-park-24.jpg",
+    "assets/photo/pt2-park-25.jpg",
+    "assets/photo/pt2-park-26.jpg",
+    "assets/photo/pt2-park-27.jpg",
+    "assets/photo/pt2-park-28.jpg",
+    "assets/photo/pt2-park-29.jpg",
+    "assets/photo/pt2-park-30.jpg",
+    "assets/photo/pt2-park-31.jpg",
+    "assets/photo/pt2-park-32.jpg",
+    "assets/photo/pt2-park-33.jpg",
+    "assets/photo/pt2-park-34.jpg",
+    "assets/photo/pt2-park-35.jpg",
+    "assets/photo/pt2-park-36.jpg",
+    "assets/photo/pt2-park-37.jpg",
+    "assets/photo/pt2-park-38.jpg",
+    "assets/photo/pt2-park-39.jpg",
+    "assets/photo/pt2-park-40.jpg",
+    "assets/photo/pt2-park-41.jpg",
+    "assets/photo/pt2-park-42.jpg",
+    "assets/photo/pt2-park-43.jpg",
+    "assets/photo/pt2-park-44.jpg",
+    "assets/photo/pt2-park-45.jpg",
+    "assets/photo/pt2-park-46.jpg",
+    "assets/photo/pt2-park-47.jpg",
+    "assets/photo/pt2-park-48.jpg",
+    "assets/photo/pt2-park-49.jpg",
+    "assets/photo/pt2-park-50.jpg",
+    "assets/photo/pt2-park-51.jpg",
+    "assets/photo/pt2-park-52.jpg",
+    "assets/photo/pt2-park-53.jpg",
+    "assets/photo/pt2-park-54.jpg",
+    "assets/photo/pt2-park-55.jpg",
+    "assets/photo/pt2-park-56.jpg",
+    "assets/photo/pt2-park-57.jpg",
+    "assets/photo/pt2-park-58.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "title": "City Portrait",
+   "album": true,
+   "photos": [
+    "assets/photo/pt2-city-01.jpg",
+    "assets/photo/pt2-city-02.jpg",
+    "assets/photo/pt2-city-03.jpg",
+    "assets/photo/pt2-city-04.jpg",
+    "assets/photo/pt2-city-05.jpg",
+    "assets/photo/pt2-city-06.jpg",
+    "assets/photo/pt2-city-07.jpg",
+    "assets/photo/pt2-city-08.jpg",
+    "assets/photo/pt2-city-09.jpg",
+    "assets/photo/pt2-city-10.jpg",
+    "assets/photo/pt2-city-11.jpg",
+    "assets/photo/pt2-city-12.jpg",
+    "assets/photo/pt2-city-13.jpg",
+    "assets/photo/pt2-city-14.jpg",
+    "assets/photo/pt2-city-15.jpg",
+    "assets/photo/pt2-city-16.jpg",
+    "assets/photo/pt2-city-17.jpg",
+    "assets/photo/pt2-city-18.jpg",
+    "assets/photo/pt2-city-19.jpg",
+    "assets/photo/pt2-city-20.jpg",
+    "assets/photo/pt2-city-21.jpg",
+    "assets/photo/pt2-city-22.jpg",
+    "assets/photo/pt2-city-23.jpg",
+    "assets/photo/pt2-city-24.jpg",
+    "assets/photo/pt2-city-25.jpg"
+   ]
+  },
+  {
+   "cat": "Portrait",
+   "title": "Heritage Portrait",
+   "album": true,
+   "photos": [
+    "assets/photo/pt2-heritage-01.jpg",
+    "assets/photo/pt2-heritage-02.jpg",
+    "assets/photo/pt2-heritage-03.jpg",
+    "assets/photo/pt2-heritage-04.jpg",
+    "assets/photo/pt2-heritage-05.jpg",
+    "assets/photo/pt2-heritage-06.jpg",
+    "assets/photo/pt2-heritage-07.jpg",
+    "assets/photo/pt2-heritage-08.jpg",
+    "assets/photo/pt2-heritage-09.jpg",
+    "assets/photo/pt2-heritage-10.jpg",
+    "assets/photo/pt2-heritage-11.jpg",
+    "assets/photo/pt2-heritage-12.jpg",
+    "assets/photo/pt2-heritage-13.jpg",
+    "assets/photo/pt2-heritage-14.jpg",
+    "assets/photo/pt2-heritage-15.jpg",
+    "assets/photo/pt2-heritage-16.jpg",
+    "assets/photo/pt2-heritage-17.jpg",
+    "assets/photo/pt2-heritage-18.jpg"
    ]
   },
   {
@@ -301,24 +892,6 @@
    "cat": "Portrait",
    "photos": [
     "assets/photo/portrait-solo-05.jpg"
-   ]
-  },
-  {
-   "cat": "Portrait",
-   "photos": [
-    "assets/photo/portrait-solo-06.jpg"
-   ]
-  },
-  {
-   "cat": "Portrait",
-   "photos": [
-    "assets/photo/portrait-solo-07.jpg"
-   ]
-  },
-  {
-   "cat": "Portrait",
-   "photos": [
-    "assets/photo/portrait-solo-08.jpg"
    ]
   },
   {
@@ -519,5 +1092,15 @@
     "assets/photo/graduation-06.jpg"
    ]
   }
+ ],
+ "videoCats": [
+  "Ads & Commercials",
+  "Marketing Videos",
+  "Motion Graphics",
+  "Corporate",
+  "Event Highlights",
+  "Montage",
+  "Podcast",
+  "Short Films"
  ]
 }

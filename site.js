@@ -38,34 +38,69 @@ const stop = card => { card.querySelector('video').pause(); card.classList.remov
 // touch screens have no hover: play preview when the card is mid-screen
 const vio = touch && new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? play(e.target) : stop(e.target)), {threshold:.75});
 
-function renderWork() {
+// segments in folder order (media.videoCats), plus any category added later from #admin
+const videoCats = () => {
   const V = HJ.media.videos;
-  grid.innerHTML = V.map((v, i) => `
-    <article class="card reveal${v.vertical ? ' vert' : ''}" data-cat="${esc(v.cat)}" data-i="${i}">
-      ${v.vertical ? `<img class="bg" src="${HJ.src(v.thumb)}" alt="" aria-hidden="true" loading="lazy">` : ''}
+  return [...new Set([...(HJ.media.videoCats || []), ...V.map(v => v.cat)])].filter(c => V.some(v => v.cat === c));
+};
+const cardHTML = (v, i) => {
+  const framed = v.vertical || v.fit;   // 9:16, square or ultra-wide: whole frame over a blurred copy
+  return `
+    <article class="card reveal${v.vertical ? ' vert' : ''}${v.fit ? ' fit' : ''}" data-cat="${esc(v.cat)}" data-i="${i}">
+      ${framed ? `<img class="bg" src="${HJ.src(v.thumb)}" alt="" aria-hidden="true" loading="lazy">` : ''}
       <img src="${HJ.src(v.thumb)}" alt="${esc(v.title)}" loading="lazy">
       <video muted loop playsinline preload="none" src="${HJ.src(v.clip)}"></video>
       <div class="play">▶</div>
       <div class="meta"><span class="tag">${esc(v.cat)}</span><h3>${esc(v.title)}</h3></div>
-    </article>`).join('');
+    </article>`;
+};
+
+// "All" = one horizontal shelf per segment; a single segment = full grid
+function drawWork(cat) {
+  const V = HJ.media.videos, idx = V.map((v, i) => [v, i]);
+  if (cat === 'All') {
+    grid.className = 'shelves';
+    grid.innerHTML = videoCats().map(c => {
+      const items = idx.filter(([v]) => v.cat === c);
+      return `<div class="shelf">
+        <div class="shelf-head"><h3>${esc(c)}</h3><span>${items.length} video${items.length > 1 ? 's' : ''}</span>
+          <button class="see" data-see="${esc(c)}">See all →</button></div>
+        <div class="shelf-row">${items.map(([v, i]) => cardHTML(v, i)).join('')}</div>
+        <button class="sh prev" aria-label="Scroll left">‹</button><button class="sh next" aria-label="Scroll right">›</button>
+      </div>`;
+    }).join('');
+  } else {
+    grid.className = 'grid';
+    grid.innerHTML = idx.filter(([v]) => v.cat === cat).map(([v, i]) => cardHTML(v, i)).join('');
+  }
   grid.querySelectorAll('.card').forEach(card => {
     if (touch) vio.observe(card);
     card.addEventListener('mouseenter', () => play(card));
     card.addEventListener('mouseleave', () => stop(card));
   });
-  renderFilters($('filters'), [...new Set(V.map(v => v.cat))], c =>
-    grid.querySelectorAll('.card').forEach(card => card.classList.toggle('hide', c !== 'All' && card.dataset.cat !== c)));
   observe(grid);
   HJ.afterRender?.('work');
 }
+function renderWork() { renderFilters($('filters'), videoCats(), drawWork); }
+
 grid.addEventListener('click', e => {
+  const see = e.target.closest('[data-see]');
+  if (see) {
+    $('filters').querySelector(`[data-c="${CSS.escape(see.dataset.see)}"]`)?.click();
+    $('work').scrollIntoView({behavior: 'smooth'});
+    return;
+  }
+  const sh = e.target.closest('.sh');
+  if (sh) {
+    const row = sh.parentElement.querySelector('.shelf-row');
+    row.scrollBy({left: (sh.classList.contains('next') ? 1 : -1) * row.clientWidth * .85, behavior: 'smooth'});
+    return;
+  }
   const card = e.target.closest('.card'); if (!card || e.target.closest('.adm')) return;
   const v = HJ.media.videos[card.dataset.i];
-  // full-length pieces (e.g. spec ads) play with sound; the rest are short muted previews
-  openModal(v.full
-    ? `<video src="${HJ.src(v.clip)}" autoplay playsinline controls></video>`
-    : `<video src="${HJ.src(v.clip)}" autoplay loop muted playsinline controls></video>`,
-    v.title, v.full ? (v.vertical ? 'Full video · 9:16' : 'Full video') : 'Preview · full video coming soon on YouTube');
+  // clicked = user gesture, so play with sound; full pieces (spec ads) vs 15-second previews
+  openModal(`<video src="${HJ.src(v.clip)}" autoplay playsinline controls${v.full ? '' : ' loop'}></video>`,
+    v.title, v.full ? (v.vertical ? 'Full video · 9:16' : 'Full video') : 'Preview · 15 sec');
 });
 
 /* ---------- photos ---------- */
@@ -84,7 +119,7 @@ function renderPhotos() {
         <div class="slides">${it.photos.map((p, j) => `<img src="${HJ.src(p)}" alt="${esc(it.title)} ${j + 1}" loading="lazy">`).join('')}</div>
         <button class="sl prev" aria-label="Previous">‹</button><button class="sl next" aria-label="Next">›</button>
         <span class="count">1 / ${it.photos.length}</span>
-        <div class="dots">${it.photos.map((_, j) => `<i class="${j ? '' : 'on'}"></i>`).join('')}</div>
+        ${it.photos.length <= 12 ? `<div class="dots">${it.photos.map((_, j) => `<i class="${j ? '' : 'on'}"></i>`).join('')}</div>` : ''}
         <figcaption>${esc(it.title)}</figcaption>
       </figure>`).join('');
   masonry.querySelectorAll('.album').forEach(initAlbum);
