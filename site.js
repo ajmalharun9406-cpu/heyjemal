@@ -4,7 +4,8 @@
 const CLIENTS = ["TNB","Cenviro","Arissto","Dashing Diva","JomRides","Big Mo","Kambyan","MyExpo","Johawaki","Koperasi Tentera","Bulan Sutena","Dr Roket TV"];
 const HJ = window.HJ = { media: null, pending: {}, afterRender: null };
 // pending uploads (admin) are shown from local object URLs until they are published
-HJ.src = p => HJ.pending[p] || p;
+// media.json "ver" is bumped whenever files are re-exported under the same name, so browsers refetch them
+HJ.src = p => HJ.pending[p] || (HJ.media?.ver ? `${p}?v=${HJ.media.ver}` : p);
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
